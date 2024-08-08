@@ -10,9 +10,10 @@
 namespace beast_search {
 
   double cal_obj(int x, int y) {
-    double numerator = std::abs(x + y - 8) + std::abs(x - y);
-    double denominator = 10 + 3 * std::sin(3 * (x - 4)) + 2 * std::sin(3 * (y - 4));
-    return 15 - 10 * (numerator / denominator);
+    return 15 - 10 * (
+          abs(x + y - 8) + abs(x - y) / 
+        10 + 3 * sin(3 * (x - 4)) + 2 * sin(3 * (y - 4))
+      );
   }
 
 }
