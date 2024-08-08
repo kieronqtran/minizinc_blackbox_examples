@@ -1,3 +1,5 @@
+include "experimental/blackbox.mzn";
+
 var -4 .. 4: x;
 var -4 .. 4: y;
 
@@ -17,6 +19,9 @@ array[-4..4] of float: t4 =
 array1d(-4..4,[-6.536436208636119,-9.899924966004454,-4.161468365471424,5.403023058681398,10.0,5.403023058681398,-4.161468365471424,-9.899924966004454,-6.536436208636119]);
 
 var -100.0 .. 100.0: obj;
-constraint obj =  t1[x] + t2[y] + t3[x] + t4[y];
-solve minimize t1[x] + t2[y] + t3[x] + t4[y];
+% constraint obj =  t1[x] + t2[y] + t3[x] + t4[y];
+
+constraint blackbox([x, y, x, y], [], [], [obj]) ::blackbox_dll("./libbb_stomach.so");
+
+solve minimize obj;
 
