@@ -33,7 +33,8 @@ constraint blackbox(BBExec, "python3 ../bb_jobshop_py/bb_jobshop_simulator.py", 
 var int: violation = sum(ma in MACH)(
                    let { array[int] of var int: ss = [ s2[j,t] | j in JOB, t in TASK where mc[j,t] = ma ];
                          array[int] of var int: dd = [ ed[j,t] + d[j,t] | j in JOB, t in TASK where mc[j,t] = ma ]; } in
-                    count(t1, t2 in index_set(ss) where t1 < t2)(occurs(ss[t1]) /\ occurs(ss[t2]) /\ ss[t1] + dd[t1] > ss[t2] /\ ss[t2] + dd[t2] > ss[t1])
+                    count(t1, t2 in index_set(ss) where t1 < t2)(
+                      occurs(ss[t1]) /\ occurs(ss[t2]) /\ ss[t1] + dd[t1] > ss[t2] /\ ss[t2] + dd[t2] > ss[t1])
 );
 
 % constraint forall(ma in MACH)

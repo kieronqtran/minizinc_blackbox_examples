@@ -2,11 +2,11 @@
 
 from sys import stdin, stderr
 from typing import List
-from gini import gini
-# from gini_np import gini
+# from gini import gini
+from gini_np import gini
 
 def bb_gini(integers: List[int], floats: List[float]) -> (List[int], List[float]):
-  return ([], [gini(integers) * 100])
+  return ([gini(integers) * 100], [])
 
 if __name__ == "__main__":
   # Continuously read lines from stdin until the pipe is closed
@@ -24,7 +24,7 @@ if __name__ == "__main__":
     floats = [float(f) for f in parts[1].split()]
 
     # Call the (now not so) blackbox function
-    (int_out, float_out) = bb_simulator(integers, floats)
+    (int_out, float_out) = bb_gini(integers, floats)
 
     # Communicate output to encapsulating process
     print(
