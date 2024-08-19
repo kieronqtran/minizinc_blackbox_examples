@@ -23,8 +23,10 @@ constraint forall(j in JOB, t in 1..m-1)
 include "disjunctive.mzn";
 include "experimental/blackbox.mzn";
 
-constraint blackbox(BBExec, "python3 ../bb_jobshop_py/bb_jobshop_simulator.py", array1d(s), [], array1d(d), []);
+constraint blackbox(array1d(s), [], array1d(d), []) ::blackbox_exec("python3 ../bb_jobshop_py/bb_jobshop_simulator.py");
 
+% constraint blackbox(array1d(s), [], array1d(d), []) ::blackbox_exec("/opt/anaconda3/bin/python /Users/kieronqtran/Projects/Deeker1/blackbox/bb_jobshop_py/bb_jobshop_simulator.py");
+ 
 % constraint forall(ma in MACH)
 %                  ( let { array[int] of var int: ss = [ s2[j,t] | j in JOB, t in TASK where mc[j,t] = ma ];
 %                          array[int] of var int: dd = [ ed[j,t] + d[j,t] | j in JOB, t in TASK where mc[j,t] = ma ]; } in

@@ -1,0 +1,14 @@
+predicate fzn_all_different_int(array [int] of var int: x);
+predicate fzn_blackbox(array [int] of var int: int_input,array [int] of var float: float_input,array [int] of var int: int_output,array [int] of var float: float_output);
+var 1..6: X_INTRODUCED_0_;
+var 1..6: X_INTRODUCED_1_;
+var 1..6: X_INTRODUCED_2_;
+var 1..6: X_INTRODUCED_3_;
+var 1..6: X_INTRODUCED_4_;
+var 1..6: X_INTRODUCED_5_;
+var int: obj:: output_var;
+array [1..6] of var int: monkey:: output_array([1..6]) = [X_INTRODUCED_0_,X_INTRODUCED_1_,X_INTRODUCED_2_,X_INTRODUCED_3_,X_INTRODUCED_4_,X_INTRODUCED_5_];
+array [1..1] of var int: X_INTRODUCED_7_ ::var_is_introduced  = [obj];
+constraint fzn_all_different_int(monkey);
+constraint fzn_blackbox(monkey,[],X_INTRODUCED_7_,[]):: blackbox_dll("./libbb_monkey.so");
+solve  maximize obj;

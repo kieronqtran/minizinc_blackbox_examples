@@ -3,7 +3,7 @@
 
 namespace pricess
 {
-  int cal_obj(int X, int Y);
+  double cal_obj(int X, int Y);
 }
 
 #endif  // PROJECT_GINI_H_
