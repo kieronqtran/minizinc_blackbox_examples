@@ -42,8 +42,10 @@ extern "C" {
                     size_t float_in_len, int *int_out, size_t int_out_len,
                     double *float_out, size_t float_out_len) {
     assert(float_out_len == 1);
-    std::vector<int> vec(int_in, int_in + int_in_len);
-    float_out[0] = gini::gini(vec) * 100;
+    int scale = int_in[0];
+    std::vector<int> vec(int_in + 1, int_in + 1 + int_in_len);
+    // std::vector<int> vec(int_in, int_in + int_in_len);
+    float_out[0] = gini::gini(vec) * scale;
   }
 
 }

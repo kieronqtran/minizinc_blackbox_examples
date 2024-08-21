@@ -14,6 +14,7 @@ array[BIN] of var 0..infinity: incomes;
 % array[BIN] of var 0..infinity: incomes = [0, 0, 0, 0, 0, 0, 0, 0, 0, 550];
 
 var 0..100: res;
+var 0..10000: total;
 
 constraint sum(incomes) = gni;
 
@@ -21,7 +22,7 @@ constraint forall(b in BIN diff { max(BIN) })(incomes[b] <= incomes[b + 1]);
 
 % constraint blackbox(BBExec, "/opt/anaconda3/bin/python ../bb_gini_py/bb_gini.py", incomes, [], [res], []);
 
-% constraint blackbox(BBDLL, "libbb_gini.so", incomes, [], [], [res]);
+constraint blackbox([100] ++ incomes, [], [], [res, total]) ::blackbox_dll("libbb_gini.so");
 
 % incomes = [49, 49, 49, 49, 59, 59, 59, 59, 59, 59];
 

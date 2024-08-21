@@ -106,9 +106,12 @@ constraint UTIL = sum(util);
 constraint forall (a in A)
  ( util[a] = sum (j in J, t in T where alloc[j] = a)
     ( occurs(done[j])*dur[j,t] ) );
-    
+
+include "experimental/blackbox.mzn";
+
 constraint if Case in {MinDis, MaxEff} then
-             gini(disp, util, UTIL, 10000)
+%              gini(disp, util, UTIL, 10000)
+              blackbox([10000] ++ util, [], [], [res]) ::blackbox_dll("libbb_gini.so");
            else
              disp = 1
            endif;
@@ -155,21 +158,21 @@ solve :: searchann minimize obj;
 %%         9 = Gini Lb Propagator as in paper.
 %%         0 = Propagate Gini when X fixed.
 
-predicate gini(var int: v, array [int] of var int: X, var int: S, int: scale) =
-  if mode = -1 \/ mode = -2 then
-    gini_decomp(X, S, v, scale)
-  elseif mode = 12 then
-    gini_decomp(X, S, v, scale) /\ gini_int(v, X, S, scale, 9)
-  else
-    gini_int(v, X, S, scale, mode)
-  endif;
+% predicate gini(var int: v, array [int] of var int: X, var int: S, int: scale) =
+%   if mode = -1 \/ mode = -2 then
+%     gini_decomp(X, S, v, scale)
+%   elseif mode = 12 then
+%     gini_decomp(X, S, v, scale) /\ gini_int(v, X, S, scale, 9)
+%   else
+%     gini_int(v, X, S, scale, mode)
+%   endif;
   
-predicate gini_decomp(array[int] of var int: X, var int: M, var int: v, int: s) =
-  let { int: n=length(X);
-        array[int] of var 0..500000000: diffs = [ abs(X[i]-X[j]) | i,j in index_set(X) where i<j];
-        var 0..500000000: tot_diff = sum(diffs) * s; 
-        var 0..500000000: result_ = tot_diff div n;
-        var 0..500000000: result = abs(result_) div abs(M)}
-  in v = result;
+% predicate gini_decomp(array[int] of var int: X, var int: M, var int: v, int: s) =
+%   let { int: n=length(X);
+%         array[int] of var 0..500000000: diffs = [ abs(X[i]-X[j]) | i,j in index_set(X) where i<j];
+%         var 0..500000000: tot_diff = sum(diffs) * s; 
+%         var 0..500000000: result_ = tot_diff div n;
+%         var 0..500000000: result = abs(result_) div abs(M)}
+%   in v = result;
 
 % predicate gini_int(var int: y, array [int] of var int: x, var int: sum, int: s, int: mode);
