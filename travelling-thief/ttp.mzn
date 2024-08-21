@@ -18,12 +18,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PARAMETERS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-enum CITY;               % cities we must visit at least once
-enum ITEM;               % items that are available to pick up 
-int: knapsack_capacity;  % capacity of the knapsack (cannot be over)
-int: min_speed;          % minimum speed to travel from one city to another
-int: max_speed;          % maximum speed to travel from one city to another
-int: renting_ratio;      % cost 0..100 of renting the knapsack as a ratio of the time travelling
+
+include "experimental/blackbox.mzn";
+
+int: ncities;
+int: nitems;
+
+set of int: CITY = 1..ncities; % cities we must visit at least once
+set of int: ITEM = 1..nitems;  % items that are available to pick up 
+int: knapsack_capacity;        % capacity of the knapsack (cannot be over)
+int: min_speed;                % minimum speed to travel from one city to another
+int: max_speed;                % maximum speed to travel from one city to another
+int: renting_ratio;            % cost 0..100 of renting the knapsack as a ratio of the time travelling
 
 array [CITY, CITY] of int: distances; % distance between each two cities
 array [ITEM] of record(int: profit, int: weight, CITY: city): items;
@@ -32,13 +38,13 @@ array [ITEM] of record(int: profit, int: weight, CITY: city): items;
 %%%%%%%%%%%%%%%%%%%%%%% FUNCTIONALLY DEPENDENT PARAMETERS %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-int: itemsPerCity = length(ITEM) div (length(CITY)-1); % number of items in each city
-constraint assert(length(ITEM) mod (length(CITY)-1) == 0, "not all cities have the same amount of items");
+int: itemsPerCity = card(ITEM) div (card(CITY)-1); % number of items in each city
+constraint assert(card(ITEM) mod (card(CITY)-1) == 0, "not all cities have the same amount of items");
 
 % maps cities to its items
 array [CITY, 1..itemsPerCity] of ITEM: city_items = array2d(
     CITY, 1..itemsPerCity,
-    [Item(1) | _ in 1..itemsPerCity] ++ [item | c in CITY, item in { i | i in ITEM where items[i].city = c }]
+    [1 | _ in 1..itemsPerCity] ++ [item | c in CITY, item in { i | i in ITEM where items[i].city = c }]
 );
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -49,7 +55,7 @@ array [CITY, 1..itemsPerCity] of ITEM: city_items = array2d(
 array [ITEM] of var bool: chosen; 
 
 % city visited at a given time; the first and last must be 1 so the last 1 is implied
-enum TIME = Time(1..length(CITY));
+set of int: TIME = 1..ncities;
 array [TIME] of var CITY: order;  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -62,7 +68,7 @@ include "globals.mzn";
 constraint all_different(order);     
 
 % the first city must be 1
-constraint order[Time(1)] = City(1); 
+constraint order[1] = 1; 
 
 % the capacity of the knapsack cannot be exceeded
 constraint sum (i in ITEM) (chosen[i] * items[i].weight) <= knapsack_capacity;
@@ -79,15 +85,20 @@ array [TIME] of var WEIGHT: weight;
 % velocity of the traveller ar any point in time (which depends on the weight)
 int: nu = (max_speed - min_speed) div knapsack_capacity;
 set of int: VELOCITY = min_speed..max_speed;
-array [TIME] of var VELOCITY: velocity :: output = [max_speed - nu * weight[t] | t in TIME];
+% array [TIME] of var VELOCITY: velocity :: output = [max_speed - nu * weight[t] | t in TIME];
+array [TIME] of var VELOCITY: velocity :: output;
 
 var int: profit :: output = sum (i in ITEM) (chosen[i] * items[i].profit);
-var int: rental :: output = renting_ratio * sum (t in TIME) (distances[order[t], if t == max(TIME) then City(1) else order[enum_next(t)] endif] div velocity[t]);
+% var int: rental :: output = renting_ratio * sum (t in TIME) (distances[order[t], if t == max(TIME) then 1 else order[enum_next(t)] endif] div velocity[t]);
+var int: rental;
+
+constraint blackbox([renting_ratio, max_speed, nu, card(TIME), card(CITY), card(CITY), card(TIME)] ++ order ++ array1d(distances) ++ weight, [], [rental] ++ velocity, []) ::blackbox_dll("libbb_travelling_thief.so");
+
 
 % in the first trip (from city 1 to whatever) the knapsack is empty
-constraint weight[Time(1)] = 0;
+constraint weight[1] = 0;
 % 
-constraint forall (t in TIME where t > Time(1)) (
+constraint forall (t in TIME where t > 1) (
     weight[t] = weight[enum_prev(t)] + sum (i in 1..itemsPerCity) (
         let {
             any: item = city_items[order[t], i]
@@ -97,7 +108,7 @@ constraint forall (t in TIME where t > Time(1)) (
 
 array [TIME] of var 0..sum(distances) div 2: distAtTime;
 
-constraint distAtTime[max(TIME)] = distances[order[max(TIME)], City(1)];
+constraint distAtTime[max(TIME)] = distances[order[max(TIME)], 1];
 % 
 constraint forall (t in TIME where t < max(TIME)) (
     distAtTime[t] = distAtTime[enum_next(t)] + distances[order[t], order[enum_next(t)]]
