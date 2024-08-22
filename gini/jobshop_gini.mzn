@@ -96,9 +96,10 @@ constraint forall (j in J, t in T)
 
 % === Utilities =================================================== %
 
-array [A] of var 1..500000000: util;
-var 1..500000000: UTIL;
-var 0..500000000: disp;
+array [A] of var 1..500000000: util::output;
+var 1..500000000: UTIL::output;
+var 0..500000000: disp::output
+;
 %var 0..500000000: disp2;
 
 constraint UTIL = sum(util);
@@ -110,12 +111,11 @@ constraint forall (a in A)
 include "experimental/blackbox.mzn";
 
 constraint if Case in {MinDis, MaxEff} then
-%              gini(disp, util, UTIL, 10000)
-              blackbox([10000] ++ util, [], [], [res]) ::blackbox_dll("libbb_gini.so");
+            blackbox([10000] ++ util, [], [disp], []) ::blackbox_dll("libbb_gini.so") /\ UTIL = sum(util)
            else
              disp = 1
            endif;
-                      
+
 % Bound on efficiency
 constraint (Case = MinDis) ->
  ( UTIL >= bnd );
@@ -167,12 +167,12 @@ solve :: searchann minimize obj;
 %     gini_int(v, X, S, scale, mode)
 %   endif;
   
-% predicate gini_decomp(array[int] of var int: X, var int: M, var int: v, int: s) =
-%   let { int: n=length(X);
-%         array[int] of var 0..500000000: diffs = [ abs(X[i]-X[j]) | i,j in index_set(X) where i<j];
-%         var 0..500000000: tot_diff = sum(diffs) * s; 
-%         var 0..500000000: result_ = tot_diff div n;
-%         var 0..500000000: result = abs(result_) div abs(M)}
-%   in v = result;
+predicate gini_decomp(array[int] of var int: X, var int: M, var int: v, int: s) =
+  let { int: n=length(X);
+        array[int] of var 0..500000000: diffs = [ abs(X[i]-X[j]) | i,j in index_set(X) where i<j];
+        var 0..500000000: tot_diff = sum(diffs) * s; 
+        var 0..500000000: result_ = tot_diff div n;
+        var 0..500000000: result = abs(result_) div abs(M)}
+  in v = result;
 
 % predicate gini_int(var int: y, array [int] of var int: x, var int: sum, int: s, int: mode);

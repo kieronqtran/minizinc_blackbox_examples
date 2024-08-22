@@ -22,13 +22,13 @@ namespace gini {
 
     for (int i = 0; i < n; i++) {
       std::vector<int>::size_type index = static_cast<std::vector<int>::size_type>(i);
-      cumulative_sum += (2 * (i + 1) - n - 1) * values[index];
+      cumulative_sum += (2 * (i + 1) - n - 1) * sorted_values[index];
     }
 
     for (int i = 0; i < n; i++)
     {
       std::vector<int>::size_type index = static_cast<std::vector<int>::size_type>(i);
-      cumulative_weight += values[index];
+      cumulative_weight += sorted_values[index];
     }
 
     return cumulative_sum / (n * cumulative_weight);
@@ -41,11 +41,10 @@ extern "C" {
   void fzn_blackbox(const int* int_in, size_t int_in_len, const double *float_in,
                     size_t float_in_len, int *int_out, size_t int_out_len,
                     double *float_out, size_t float_out_len) {
-    assert(float_out_len == 1);
+    assert(int_out_len == 1);
     int scale = int_in[0];
-    std::vector<int> vec(int_in + 1, int_in + 1 + int_in_len);
-    // std::vector<int> vec(int_in, int_in + int_in_len);
-    float_out[0] = gini::gini(vec) * scale;
+    std::vector<int> vec(int_in + 1, int_in + int_in_len);
+    int_out[0] = gini::gini(vec) * scale;
   }
 
 }

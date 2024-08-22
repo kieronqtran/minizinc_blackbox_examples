@@ -53,10 +53,11 @@ docs: ## generate Doxygen HTML documentation, including API docs
 
 install: ## install the package to the `INSTALL_LOCATION`
 	rm -rf build/
-	cmake -Bbuild -DCMAKE_INSTALL_PREFIX=$(INSTALL_LOCATION) -Dbb_gini_ENABLE_UNIT_TESTING=OFF
-	cmake --build build --config Release
-	cmake --build build --target install --config Release
-	cp $(INSTALL_LOCATION)/lib/libbb_gini.so ../models/libbb_gini.so
+	CFLAGS="-arch arm64" CXXFLAGS="-arch arm64" cmake -Bbuild -DCMAKE_INSTALL_PREFIX=$(INSTALL_LOCATION) -Dbb_gini_ENABLE_UNIT_TESTING=OFF
+	CFLAGS="-arch arm64" CXXFLAGS="-arch arm64" cmake --build build --config Release
+	CFLAGS="-arch arm64" CXXFLAGS="-arch arm64" cmake --build build --target install --config Release
+  ## cp $(INSTALL_LOCATION)/lib/libbb_gini.so ../models/libbb_gini.so
+	cp $(INSTALL_LOCATION)/lib/libbb_gini.so ../gini/libbb_gini.so
 
 format: ## format the project sources
 	rm -rf build/
