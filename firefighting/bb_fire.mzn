@@ -14,14 +14,17 @@ array[PREC] of FIRE: post; % before this
 int: maxt = sum(f in FIRE)(d[f]); % max time
 
 array[FIRE] of var 0..maxt: s; % start time
-array[FIRE] of var 0..maxt: 
-    e = [s[f] + d[f] | f in FIRE]; % end time
+array[FIRE] of var 0..maxt: e = [s[f] + d[f] | f in FIRE]; % end time
 
 constraint forall(i in PREC)
     (e[pre[i]] <= s[post[i]]);
-    
-include "cumulative.mzn";
-constraint cumulative(s, d, reqW, w);
+
+% include "cumulative.mzn";
+% constraint cumulative(s, d, reqW, w);
+
+include "experimental/blackbox.mzn";
+% this is not working since it's never complete
+constraint blackbox([w, n] ++ s ++ d ++ reqW, [], s, []) ::blackbox_exec("python ./bb_lns_py/bb_lns_py.py");
 
 var int: obj = sum(f in FIRE)(abs(s[f] - best[f]));
 solve :: relax_and_reconstruct(s, 70)

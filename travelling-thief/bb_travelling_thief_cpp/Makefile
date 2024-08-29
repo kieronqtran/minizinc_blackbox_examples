@@ -56,7 +56,7 @@ install: ## install the package to the `INSTALL_LOCATION`
 	CFLAGS="-arch arm64" CXXFLAGS="-arch arm64" cmake -Bbuild -DCMAKE_INSTALL_PREFIX=$(INSTALL_LOCATION) -Dbb_travelling_thief_ENABLE_UNIT_TESTING=OFF
 	CFLAGS="-arch arm64" CXXFLAGS="-arch arm64" cmake --build build --config Release
 	CFLAGS="-arch arm64" CXXFLAGS="-arch arm64" cmake --build build --target install --config Release
-	cp $(INSTALL_LOCATION)/lib/libbb_travelling_thief.so ../travelling-thief/libbb_travelling_thief.so
+	cp $(INSTALL_LOCATION)/lib/libbb_travelling_thief.so ../libbb_travelling_thief.so
 
 format: ## format the project sources
 	rm -rf build/

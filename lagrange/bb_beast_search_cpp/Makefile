@@ -56,7 +56,7 @@ install: ## install the package to the `INSTALL_LOCATION`
 	cmake -Bbuild -DCMAKE_INSTALL_PREFIX=$(INSTALL_LOCATION) -Dbb_beast_search_ENABLE_UNIT_TESTING=OFF
 	cmake --build build --config Release
 	cmake --build build --target install --config Release
-	cp $(INSTALL_LOCATION)/lib/libbb_beast_search.so ../LS/lagrange/libbb_beast_search.so
+	cp $(INSTALL_LOCATION)/lib/libbb_beast_search.so ../libbb_beast_search.so
 
 format: ## format the project sources
 	rm -rf build/

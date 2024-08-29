@@ -83,7 +83,7 @@ set of int: WEIGHT = 0..knapsack_capacity;
 array [TIME] of var WEIGHT: weight; 
 
 % velocity of the traveller ar any point in time (which depends on the weight)
-int: nu = (max_speed - min_speed) div knapsack_capacity;
+% int: nu = (max_speed - min_speed) div (knapsack_capacity / 1000);
 set of int: VELOCITY = min_speed..max_speed;
 % array [TIME] of var VELOCITY: velocity :: output = [max_speed - nu * weight[t] | t in TIME];
 array [TIME] of var VELOCITY: velocity :: output;
@@ -92,7 +92,7 @@ var int: profit :: output = sum (i in ITEM) (chosen[i] * items[i].profit);
 % var int: rental :: output = renting_ratio * sum (t in TIME) (distances[order[t], if t == max(TIME) then 1 else order[enum_next(t)] endif] div velocity[t]);
 var int: rental;
 
-constraint blackbox([renting_ratio, max_speed, nu, card(TIME), card(CITY), card(CITY), card(TIME)] ++ order ++ array1d(distances) ++ weight, [], [rental] ++ velocity, []) ::blackbox_dll("libbb_travelling_thief.so");
+constraint blackbox([renting_ratio, max_speed, min_speed, knapsack_capacity, card(TIME), card(CITY), card(CITY), card(TIME)] ++ order ++ array1d(distances) ++ weight, [], [rental] ++ velocity, []) ::blackbox_dll("libbb_travelling_thief.so");
 
 
 % in the first trip (from city 1 to whatever) the knapsack is empty

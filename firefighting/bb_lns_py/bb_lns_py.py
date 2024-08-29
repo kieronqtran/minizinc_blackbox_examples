@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from sys import stdin, stderr
-from typing import List
+from typing import List, Tuple
 import random
 from itertools import batched
 
@@ -15,7 +15,7 @@ def cumulative(s: List[int], d: List[int], r: List[int], b: int):
             return False
     return True
 
-def bb_simulator(inputs: List[int], _: List[float]) -> (List[int], List[float]):
+def bb_simulator(inputs: List[int], _: List[float]) -> Tuple[List[int], List[float]]:
   n_wukong, n_fire, *o_inputs = inputs
   starts, durations, reqW = list(batched(o_inputs, n_fire))
   r = cumulative(starts, durations, reqW, n_wukong)

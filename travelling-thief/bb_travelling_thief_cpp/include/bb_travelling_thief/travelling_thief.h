@@ -3,7 +3,7 @@
 
 namespace traveling_thief
 {
-  std::vector<int> cal_velocity(int max_speed, int nu, std::vector<int>& weights);
+  std::vector<int> cal_velocity(int max_speed, double nu, std::vector<int>& weights);
   int cal_rental(int renting_ratio, std::map<std::pair<int,int>, int>& distances, std::vector<int>& order, std::vector<int>& velocity);
 }
 

@@ -111,7 +111,8 @@ constraint forall (a in A)
 include "experimental/blackbox.mzn";
 
 constraint if Case in {MinDis, MaxEff} then
-            blackbox([10000] ++ util, [], [disp], []) ::blackbox_dll("libbb_gini.so") /\ UTIL = sum(util)
+                gini_decomp(util, UTIL, disp, 10000)
+%             blackbox([10000] ++ util, [], [disp], []) ::blackbox_dll("libbb_gini.so") /\ UTIL = sum(util)
            else
              disp = 1
            endif;
