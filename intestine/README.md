@@ -1,11 +1,11 @@
-# Black-Box Example for Local Search
+# Black-Box Example for Simulated Annealing
 
-This example taken from [Coursera Pricess Example for Local Search](https://www.coursera.org/learn/solving-algorithms-discrete-optimization/lecture/1YLYy/3-4-1-local-search)
+This example taken from [Coursera Pricess Example for Simulated Annealing](https://www.coursera.org/learn/solving-algorithms-discrete-optimization/lecture/EkDlK/3-4-4-simulated-annealing)
 
 # Build the blackbox program before run the MiniZinc Model
 
 ```bash
-cd bb_pricess_cpp
+cd bb_intestine_py
 make install
 cd ..
 ```

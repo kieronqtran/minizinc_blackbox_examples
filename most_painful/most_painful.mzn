@@ -21,4 +21,3 @@ include "experimental/blackbox.mzn";
 constraint blackbox([x, y], [], [], [obj]) ::blackbox_dll("./libbb_most_painful.so");
 
 solve minimize obj;
-

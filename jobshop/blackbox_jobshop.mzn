@@ -23,7 +23,7 @@ constraint forall(j in JOB, t in 1..m-1)
 include "disjunctive.mzn";
 include "experimental/blackbox.mzn";
 
-constraint blackbox(array1d(s), [], array1d(d), []) ::blackbox_exec("python3 ../bb_jobshop_py/bb_jobshop_simulator.py");
+constraint blackbox(array1d(s), [], array1d(d), []) ::blackbox_exec("python ./bb_jobshop_py/bb_jobshop_simulator.py");
 
 % constraint blackbox(array1d(s), [], array1d(d), []) ::blackbox_exec("/opt/anaconda3/bin/python /Users/kieronqtran/Projects/Deeker1/blackbox/bb_jobshop_py/bb_jobshop_simulator.py");
 

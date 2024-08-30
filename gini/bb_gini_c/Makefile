@@ -112,7 +112,7 @@ help:
 # Rule for link and generate the binary file
 install:
 	@echo -en "$(BROWN)LD $(END_COLOR)";
-	gcc -Iinclude -shared -o ../models/libbb_gini.so ./src/bb_gini.c
+	gcc -Iinclude -shared -o ../libbb_gini.so ./src/bb_gini.c
 
 # Compile tests and run the test binary
 tests:

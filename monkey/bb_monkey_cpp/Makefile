@@ -56,7 +56,7 @@ install: ## install the package to the `INSTALL_LOCATION`
 	cmake -Bbuild -DCMAKE_INSTALL_PREFIX=$(INSTALL_LOCATION) -Dbb_monkey_ENABLE_UNIT_TESTING=OFF
 	cmake --build build --config Release
 	cmake --build build --target install --config Release
-	cp $(INSTALL_LOCATION)/lib/libbb_monkey.so ../LS/monkey/libbb_monkey.so
+	cp $(INSTALL_LOCATION)/lib/libbb_monkey.so ../libbb_monkey.so
 
 format: ## format the project sources
 	rm -rf build/

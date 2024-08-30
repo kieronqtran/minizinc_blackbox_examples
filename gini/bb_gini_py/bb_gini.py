@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
 from sys import stdin, stderr
-from typing import List
+from typing import List, Tuple
 # from gini import gini
 from gini_np import gini
 
-def bb_gini(integers: List[int], floats: List[float]) -> (List[int], List[float]):
+def bb_gini(integers: List[int], floats: List[float]) -> Tuple[List[int], List[float]]:
   return ([gini(integers) * 100], [])
 
 if __name__ == "__main__":
@@ -24,7 +24,7 @@ if __name__ == "__main__":
     floats = [float(f) for f in parts[1].split()]
 
     # Call the (now not so) blackbox function
-    (int_out, float_out) = bb_gini(integers, floats)
+    int_out, float_out = bb_gini(integers, floats)
 
     # Communicate output to encapsulating process
     print(

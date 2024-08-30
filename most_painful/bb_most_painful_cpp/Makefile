@@ -32,13 +32,13 @@ help:
 
 tests: ## run tests quickly with ctest
 	rm -rf build/
-	cmake -Bbuild -DCMAKE_INSTALL_PREFIX=$(INSTALL_LOCATION) -Dbb_stomach_ENABLE_UNIT_TESTING=1 -DCMAKE_BUILD_TYPE="Release"
+	cmake -Bbuild -DCMAKE_INSTALL_PREFIX=$(INSTALL_LOCATION) -Dbb_most_painful_ENABLE_UNIT_TESTING=1 -DCMAKE_BUILD_TYPE="Release"
 	cmake --build build --config Release
 	cd build/ && ctest -C Release -VV
 
 coverage: ## check code coverage quickly GCC
 	rm -rf build/
-	cmake -Bbuild -DCMAKE_INSTALL_PREFIX=$(INSTALL_LOCATION) -Dbb_stomach_ENABLE_CODE_COVERAGE=1
+	cmake -Bbuild -DCMAKE_INSTALL_PREFIX=$(INSTALL_LOCATION) -Dbb_most_painful_ENABLE_CODE_COVERAGE=1
 	cmake --build build --config Release
 	cd build/ && ctest -C Release -VV
 	cd .. && (bash -c "find . -type f -name '*.gcno' -exec gcov -pb {} +" || true)
@@ -53,10 +53,10 @@ docs: ## generate Doxygen HTML documentation, including API docs
 
 install: ## install the package to the `INSTALL_LOCATION`
 	rm -rf build/
-	cmake -Bbuild -DCMAKE_INSTALL_PREFIX=$(INSTALL_LOCATION) -Dbb_stomach_ENABLE_UNIT_TESTING=OFF
+	cmake -Bbuild -DCMAKE_INSTALL_PREFIX=$(INSTALL_LOCATION) -Dbb_most_painful_ENABLE_UNIT_TESTING=OFF
 	cmake --build build --config Release
 	cmake --build build --target install --config Release
-	cp $(INSTALL_LOCATION)/lib/libbb_stomach.so ../LS/escaping_local_minima/libbb_stomach.so
+	cp $(INSTALL_LOCATION)/lib/libbb_most_painful.so ../libbb_most_painful.so
 
 format: ## format the project sources
 	rm -rf build/

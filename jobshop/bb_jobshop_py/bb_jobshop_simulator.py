@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
 from sys import stdin, stderr
-from typing import List
+from typing import List, Tuple
 import random
 
-def bb_simulator(starts: List[int], _: List[float]) -> (List[int], List[float]):
+def bb_simulator(starts: List[int], _: List[float]) -> Tuple[List[int], List[float]]:
   output_durations = [ random.randint(-1, 2) for i in range(len(starts))]
   return (output_durations, [])
 
