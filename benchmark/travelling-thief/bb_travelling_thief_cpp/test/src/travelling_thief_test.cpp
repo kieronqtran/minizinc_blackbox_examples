@@ -8,7 +8,7 @@
 TEST(TravelingThiefTest, CheckValues)
 {
 
-  std::vector<std::vector<int>> distances = {
+  std::vector<std::vector<int>> distances =  {
       {   0,  50, 547, 256, 390, 220, 738, 273, 389, 361 },
       {  50,   0, 595, 255, 434, 266, 788, 253, 420, 337 },
       { 547, 595,   0, 552, 416, 410, 222, 651, 326, 722 },
@@ -21,6 +21,7 @@ TEST(TravelingThiefTest, CheckValues)
       { 361, 337, 722, 172, 730, 556, 943,  91, 416,   0 }
   };
 
+
   std::vector<int> orders = {1, 2, 3, 5, 6, 7, 9, 4, 8, 10};
   std::vector<int> weights = {0, 0, 1925, 1925, 2583, 2583, 2583, 2583, 2583, 2583};
 
@@ -32,7 +33,7 @@ TEST(TravelingThiefTest, CheckValues)
       orders,
       weights
   );
-    ASSERT_EQ(result, 14.0);
+  ASSERT_EQ(result, 14.0);
 }
 
 int main(int argc, char **argv)

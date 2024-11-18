@@ -28,7 +28,7 @@ set of int: ITEM = 1..nitems;  % items that are available to pick up
 int: knapsack_capacity;        % capacity of the knapsack (cannot be over)
 int: min_speed;                % minimum speed to travel from one city to another
 int: max_speed;                % maximum speed to travel from one city to another
-int: renting_ratio;            % cost 0..100 of renting the knapsack as a ratio of the time travelling
+float: renting_ratio;          % cost 0..100 of renting the knapsack as a ratio of the time travelling
 
 array [CITY, CITY] of int: distances; % distance between each two cities
 array [ITEM] of record(int: profit, int: weight, CITY: city): items;
@@ -51,11 +51,18 @@ array [CITY, 1..itemsPerCity] of ITEM: city_items = array2d(
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % whether an item is picked or not
-array [ITEM] of var bool: chosen; 
+array [ITEM] of var bool: chosen::output; 
 
 % city visited at a given time; the first and last must be 1 so the last 1 is implied
 set of int: TIME = 1..ncities;
-array [TIME] of var CITY: order;  
+array [TIME] of var CITY: order::output;  
+
+% order = [1, 6, 5, 7, 3, 9, 4, 10, 8, 2];
+% chosen = [false, true, false, false, false, false, false, false, false,
+%        false, false, false, false, true, false, false, false, false,
+%        false, false, false, false, false, false, false, false, false];
+
+% constraint forall(i in ITEM where chosen[i])(trace("\(chosen[i]):\(items[i])\n", chosen[i]));
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MAIN CONSTRAINTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -73,7 +80,7 @@ constraint order[1] = 1;
 constraint sum (i in ITEM) (chosen[i] * items[i].weight) <= knapsack_capacity;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% OBJECTIVE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% OBJECTIVE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 
 
@@ -82,11 +89,11 @@ set of int: WEIGHT = 0..knapsack_capacity;
 array [TIME] of var WEIGHT: weight; 
 
 % velocity of the traveller ar any point in time (which depends on the weight)
-set of int: VELOCITY = min_speed..max_speed;
-array [TIME] of var VELOCITY: velocity:: output = [max_speed - (max_speed - min_speed) * weight[t] div knapsack_capacity | t in TIME];
+array [TIME] of var float: velocity:: output = [max_speed - (max_speed - min_speed) * weight[t] / knapsack_capacity | t in TIME];
 
 var int: profit :: output = sum (i in ITEM) (chosen[i] * items[i].profit);
-var int: rental :: output = renting_ratio * sum (t in TIME) (distances[order[t], if t == max(TIME) then 1 else order[enum_next(t)] endif] div velocity[t]);
+var float: rental :: output = sum (t in TIME) ((distances[order[t], if t == max(TIME) then 1 else order[enum_next(t)] endif]) / velocity[t]);
+var float: total_travel_time :: output = renting_ratio * rental;
 
 % in the first trip (from city 1 to whatever) the knapsack is empty
 constraint weight[1] = 0;
@@ -112,7 +119,7 @@ array [TIME, 1..itemsPerCity] of var bool: chosen_order = [
         (t, i): chosen[city_items[order[t], i]] | t in TIME, i in 1..itemsPerCity
     ];
 
-var int: objective = 100 * profit - rental;
+var float: objective = profit - total_travel_time;
 
 solve :: seq_search([
     int_search(order, input_order, indomain_min),

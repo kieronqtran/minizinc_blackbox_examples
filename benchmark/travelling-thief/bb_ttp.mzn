@@ -30,7 +30,7 @@ set of int: ITEM = 1..nitems;  % items that are available to pick up
 int: knapsack_capacity;        % capacity of the knapsack (cannot be over)
 int: min_speed;                % minimum speed to travel from one city to another
 int: max_speed;                % maximum speed to travel from one city to another
-int: renting_ratio;            % cost 0..100 of renting the knapsack as a ratio of the time travelling
+float: renting_ratio;          % cost 0..100 of renting the knapsack as a ratio of the time travelling
 
 array [CITY, CITY] of int: distances; % distance between each two cities
 array [ITEM] of record(int: profit, int: weight, CITY: city): items;
@@ -84,10 +84,9 @@ set of int: WEIGHT = 0..knapsack_capacity;
 array [TIME] of var WEIGHT: weight;
 
 var int: profit :: output = sum (i in ITEM) (chosen[i] * items[i].profit);
-var int: rental;
+var 0.0..(max(distances) * card(TIME) * renting_ratio) / min_speed: rental; % Prevent Gecode floating point error
 
 constraint blackbox([
-        renting_ratio,
         max_speed,
         min_speed,
         knapsack_capacity,
@@ -96,9 +95,9 @@ constraint blackbox([
         card(TIME)          % length of weights
         ] ++ order
           ++ weight,
-        [],                 % no float output
-        [rental],
-        []                  % no float output
+        [renting_ratio],    % no float input
+        [],
+        [rental]            % no float output
     ) ::blackbox_dll("./libbb_travelling_thief.so");
 
 
@@ -118,7 +117,7 @@ array [TIME, 1..itemsPerCity] of var bool: chosen_order = [
         (t, i): chosen[city_items[order[t], i]] | t in TIME, i in 1..itemsPerCity
     ];
 
-var int: objective = 100 * profit - rental;
+var float: objective = profit - rental;
 
 solve :: seq_search([
     int_search(order, input_order, indomain_min),

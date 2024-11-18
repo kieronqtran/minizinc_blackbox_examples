@@ -20,7 +20,7 @@ namespace traveling_thief {
     ) {
         double rental = 0;
         for (int i = 0; i < orders.size(); ++i) {
-            int velocity = static_cast<int>(max_speed - weights[i] * (max_speed - min_speed) / knapsack_capacity);
+            double velocity = max_speed - weights[i] * (max_speed - min_speed) / knapsack_capacity;
             int current_city = orders[i] - 1;
             int next_city = (i == orders.size() - 1) ? 0 : orders[i + 1] - 1;
             rental += city_distances[current_city][next_city] / velocity;
@@ -138,14 +138,14 @@ extern "C" {
   void fzn_blackbox(const int* int_in, size_t int_in_len, const double *float_in,
                     size_t float_in_len, int *int_out, size_t int_out_len,
                     double *float_out, size_t float_out_len) {
-    int renting_ratio = int_in[0];
-    int max_speed = int_in[1];
-    int min_speed = int_in[2];
-    int knapsack_capacity = int_in[3];
-    int distance_matrix = int_in[4];
-    int order_len = int_in[5];
-    int weights_len = int_in[6];
-    int d = 7;
+    float renting_ratio = float_in[0];
+    int max_speed = int_in[0];
+    int min_speed = int_in[1];
+    int knapsack_capacity = int_in[2];
+    int distance_matrix = int_in[3];
+    int order_len = int_in[4];
+    int weights_len = int_in[5];
+    int d = 6;
     std::vector<int> orders(int_in + d, int_in + d + order_len);
     std::vector<int> weights(int_in + d + order_len,
                              int_in + d + order_len + weights_len);
@@ -154,7 +154,6 @@ extern "C" {
 
     double rental = traveling_thief::cal_rental(max_speed, min_speed, knapsack_capacity, distances, orders, weights);
 
-    int_out[0] = static_cast<int>(renting_ratio * rental);
+    float_out[0] = renting_ratio * rental;
   }
-
 }
