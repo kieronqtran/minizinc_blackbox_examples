@@ -95,9 +95,9 @@ constraint blackbox([
         card(TIME)          % length of weights
         ] ++ order
           ++ weight,
-        [renting_ratio],    % no float input
+        [renting_ratio],
         [],
-        [rental]            % no float output
+        [rental]
     ) ::blackbox_dll("./libbb_travelling_thief.so");
 
 

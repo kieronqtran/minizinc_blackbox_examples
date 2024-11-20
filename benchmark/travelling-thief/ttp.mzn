@@ -57,13 +57,6 @@ array [ITEM] of var bool: chosen::output;
 set of int: TIME = 1..ncities;
 array [TIME] of var CITY: order::output;  
 
-% order = [1, 6, 5, 7, 3, 9, 4, 10, 8, 2];
-% chosen = [false, true, false, false, false, false, false, false, false,
-%        false, false, false, false, true, false, false, false, false,
-%        false, false, false, false, false, false, false, false, false];
-
-% constraint forall(i in ITEM where chosen[i])(trace("\(chosen[i]):\(items[i])\n", chosen[i]));
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MAIN CONSTRAINTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

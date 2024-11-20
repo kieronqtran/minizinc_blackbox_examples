@@ -1,0 +1,1240 @@
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, true, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [11669, 11045, 10282, 9839, 9470, 8712, 8098, 7420, 7086, 6768, 5976,
+      5050, 4498, 4133, 3492, 2575, 1765, 1106, 663, 401]
+    objective: 4452.787076320939
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    profit: 4730
+    rental: 6.026367906066537
+    total_travel_time: 277.2129236790607
+    velocity: [2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0,
+      2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0,
+      1022.0]
+    weight: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 978]
+  status: SATISFIED
+  time: 2.694
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false]
+    distAtTime: [11669, 11045, 10282, 9839, 9470, 8712, 8098, 7420, 7086, 6768, 5976,
+      5050, 4498, 4133, 3492, 2575, 1765, 1106, 663, 401]
+    objective: 7803.498724833394
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    profit: 8080
+    rental: 6.010897286230566
+    total_travel_time: 276.501275166606
+    velocity: [2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0,
+      2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 1885.0,
+      1087.0]
+    weight: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 115, 913]
+  status: SATISFIED
+  time: 2.709
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, true, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [11669, 11045, 10282, 9839, 9470, 8712, 8098, 7420, 7086, 6768, 5976,
+      5050, 4498, 4133, 3492, 2575, 1765, 1106, 663, 401]
+    objective: 22640.26097355406
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    profit: 22932
+    rental: 6.342152748824852
+    total_travel_time: 291.7390264459432
+    velocity: [2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0,
+      2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 1875.0, 1875.0, 1165.0, 1050.0,
+      1050.0]
+    weight: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 125, 125, 835, 950, 950]
+  status: SATISFIED
+  time: 2.723
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, true, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [11669, 11045, 10282, 9839, 9470, 8712, 8098, 7420, 7086, 6768, 5976,
+      5050, 4498, 4133, 3492, 2575, 1765, 1106, 663, 401]
+    objective: 25120.29181390021
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    profit: 25423
+    rental: 6.580612741299734
+    total_travel_time: 302.7081860997878
+    velocity: [2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0,
+      2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 1612.0, 1487.0, 1487.0, 1254.0, 1139.0,
+      1139.0]
+    weight: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 388, 513, 513, 746, 861, 861]
+  status: SATISFIED
+  time: 2.726
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, true, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [11669, 11045, 10282, 9839, 9470, 8712, 8098, 7420, 7086, 6768, 5976,
+      5050, 4498, 4133, 3492, 2575, 1765, 1106, 663, 401]
+    objective: 27406.36094435681
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    profit: 27722
+    rental: 6.861718600938846
+    total_travel_time: 315.6390556431869
+    velocity: [2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0,
+      2000.0, 2000.0, 1739.0, 1739.0, 1739.0, 1527.0, 1402.0, 1402.0, 1169.0, 1054.0,
+      1054.0]
+    weight: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 261, 261, 261, 473, 598, 598, 831, 946,
+      946]
+  status: SATISFIED
+  time: 2.728
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [11669, 11045, 10282, 9839, 9470, 8712, 8098, 7420, 7086, 6768, 5976,
+      5050, 4498, 4133, 3492, 2575, 1765, 1106, 663, 401]
+    objective: 31856.69333271122
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    profit: 32175
+    rental: 6.919710158451783
+    total_travel_time: 318.306667288782
+    velocity: [2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0,
+      2000.0, 1743.0, 1743.0, 1743.0, 1743.0, 1531.0, 1406.0, 1406.0, 1173.0, 1058.0,
+      1058.0]
+    weight: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 257, 257, 257, 257, 469, 594, 594, 827,
+      942, 942]
+  status: SATISFIED
+  time: 2.73
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [11669, 11045, 10282, 9839, 9470, 8712, 8098, 7420, 7086, 6768, 5976,
+      5050, 4498, 4133, 3492, 2575, 1765, 1106, 663, 401]
+    objective: 33393.08751399616
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    profit: 33720
+    rental: 7.106793173996559
+    total_travel_time: 326.9124860038417
+    velocity: [2000.0, 2000.0, 2000.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0,
+      1767.0, 1767.0, 1767.0, 1767.0, 1767.0, 1555.0, 1430.0, 1430.0, 1197.0, 1082.0,
+      1082.0]
+    weight: [0, 0, 0, 233, 233, 233, 233, 233, 233, 233, 233, 233, 233, 233, 445,
+      570, 570, 803, 918, 918]
+  status: SATISFIED
+  time: 2.731
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [11669, 11045, 10282, 9839, 9470, 8712, 8098, 7420, 7086, 6768, 5976,
+      5050, 4498, 4133, 3492, 2575, 1765, 1106, 663, 401]
+    objective: 33709.8496145155
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    profit: 34052
+    rental: 7.438051858358752
+    total_travel_time: 342.1503854845026
+    velocity: [2000.0, 2000.0, 2000.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0,
+      1767.0, 1510.0, 1510.0, 1510.0, 1510.0, 1510.0, 1385.0, 1385.0, 1152.0, 1037.0,
+      1037.0]
+    weight: [0, 0, 0, 233, 233, 233, 233, 233, 233, 233, 490, 490, 490, 490, 490,
+      615, 615, 848, 963, 963]
+  status: SATISFIED
+  time: 2.733
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [11669, 11045, 10282, 9839, 9470, 8712, 8098, 7420, 7086, 6768, 5976,
+      5050, 4498, 4133, 3492, 2575, 1765, 1106, 663, 401]
+    objective: 36375.36950986137
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    profit: 36730
+    rental: 7.709358481274543
+    total_travel_time: 354.6304901386289
+    velocity: [2000.0, 2000.0, 2000.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0,
+      1767.0, 1510.0, 1510.0, 1510.0, 1510.0, 1298.0, 1173.0, 1173.0, 1173.0, 1058.0,
+      1058.0]
+    weight: [0, 0, 0, 233, 233, 233, 233, 233, 233, 233, 490, 490, 490, 490, 702,
+      827, 827, 827, 942, 942]
+  status: SATISFIED
+  time: 2.736
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [11531, 10907, 10144, 9701, 9332, 8574, 7960, 7282, 6948, 6630, 5838,
+      4912, 4360, 3995, 3354, 3140, 2330, 1106, 663, 401]
+    objective: 36381.18536532528
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 16, 18, 19, 20]
+    profit: 36730
+    rental: 7.582926840754733
+    total_travel_time: 348.8146346747177
+    velocity: [2000.0, 2000.0, 2000.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0,
+      1767.0, 1510.0, 1510.0, 1510.0, 1510.0, 1298.0, 1298.0, 1173.0, 1173.0, 1058.0,
+      1058.0]
+    weight: [0, 0, 0, 233, 233, 233, 233, 233, 233, 233, 490, 490, 490, 490, 702,
+      702, 827, 827, 942, 942]
+  status: SATISFIED
+  time: 3.024
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [11530, 10906, 10143, 9700, 9331, 8573, 7959, 7281, 6947, 6629, 5837,
+      4911, 4359, 3994, 3353, 3139, 2329, 1760, 1102, 659]
+    objective: 36381.24163130994
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 16, 20, 18, 19]
+    profit: 36730
+    rental: 7.581703667175281
+    total_travel_time: 348.7583686900629
+    velocity: [2000.0, 2000.0, 2000.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0,
+      1767.0, 1510.0, 1510.0, 1510.0, 1510.0, 1298.0, 1298.0, 1173.0, 1173.0, 1173.0,
+      1058.0]
+    weight: [0, 0, 0, 233, 233, 233, 233, 233, 233, 233, 490, 490, 490, 490, 702,
+      702, 827, 827, 827, 942]
+  status: SATISFIED
+  time: 3.072
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [11281, 10657, 9894, 9451, 9082, 8324, 7710, 7032, 6698, 6380, 5588,
+      4662, 4110, 3745, 3104, 2890, 2231, 1788, 970, 401]
+    objective: 36391.05459056137
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 16, 20]
+    profit: 36730
+    rental: 7.368378466057242
+    total_travel_time: 338.9454094386331
+    velocity: [2000.0, 2000.0, 2000.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0,
+      1767.0, 1510.0, 1510.0, 1510.0, 1510.0, 1298.0, 1298.0, 1298.0, 1183.0, 1058.0,
+      1058.0]
+    weight: [0, 0, 0, 233, 233, 233, 233, 233, 233, 233, 490, 490, 490, 490, 702,
+      702, 702, 817, 942, 942]
+  status: SATISFIED
+  time: 3.12
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [10656, 10032, 9269, 8826, 8457, 7699, 7085, 6407, 6073, 5755, 4963,
+      4037, 3485, 3120, 2479, 2265, 1606, 1163, 901, 332]
+    objective: 36418.28822649066
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 16]
+    profit: 36730
+    rental: 6.776342902377067
+    total_travel_time: 311.7117735093451
+    velocity: [2000.0, 2000.0, 2000.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0,
+      1767.0, 1510.0, 1510.0, 1510.0, 1510.0, 1298.0, 1298.0, 1298.0, 1183.0, 1183.0,
+      1058.0]
+    weight: [0, 0, 0, 233, 233, 233, 233, 233, 233, 233, 490, 490, 490, 490, 702,
+      702, 702, 817, 817, 942]
+  status: SATISFIED
+  time: 3.141
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [10554, 9930, 9167, 8724, 8355, 7597, 6983, 6305, 5971, 5653, 4861,
+      3935, 3383, 3018, 2266, 2052, 1606, 1163, 901, 332]
+    objective: 36423.52007579524
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 17, 15, 18, 19, 20, 16]
+    profit: 36730
+    rental: 6.662607047929572
+    total_travel_time: 306.4799242047603
+    velocity: [2000.0, 2000.0, 2000.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0,
+      1767.0, 1510.0, 1510.0, 1510.0, 1510.0, 1510.0, 1298.0, 1298.0, 1183.0, 1183.0,
+      1058.0]
+    weight: [0, 0, 0, 233, 233, 233, 233, 233, 233, 233, 490, 490, 490, 490, 490,
+      702, 702, 817, 817, 942]
+  status: SATISFIED
+  time: 5.017
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [10243, 9619, 8856, 8413, 8044, 7286, 6672, 5994, 5660, 5342, 4550,
+      3624, 3072, 2707, 2102, 1656, 1442, 1163, 901, 332]
+    objective: 36434.96457012682
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 18, 15, 17, 19, 20, 16]
+    profit: 36730
+    rental: 6.413813692895338
+    total_travel_time: 295.0354298731855
+    velocity: [2000.0, 2000.0, 2000.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0,
+      1767.0, 1510.0, 1510.0, 1510.0, 1510.0, 1510.0, 1298.0, 1298.0, 1183.0, 1183.0,
+      1058.0]
+    weight: [0, 0, 0, 233, 233, 233, 233, 233, 233, 233, 490, 490, 490, 490, 490,
+      702, 702, 817, 817, 942]
+  status: SATISFIED
+  time: 6.05
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [10051, 9427, 8664, 8221, 7852, 7094, 6480, 5802, 5468, 5150, 4358,
+      3432, 3220, 2855, 2266, 2052, 1606, 1163, 901, 332]
+    objective: 36438.84325460318
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 13, 17, 15, 18, 19, 20, 16]
+    profit: 36730
+    rental: 6.329494465148115
+    total_travel_time: 291.1567453968133
+    velocity: [2000.0, 2000.0, 2000.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0,
+      1767.0, 1510.0, 1510.0, 1510.0, 1510.0, 1510.0, 1298.0, 1298.0, 1183.0, 1183.0,
+      1058.0]
+    weight: [0, 0, 0, 233, 233, 233, 233, 233, 233, 233, 490, 490, 490, 490, 490,
+      702, 702, 817, 817, 942]
+  status: SATISFIED
+  time: 48.236
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [10091, 9467, 8704, 8261, 7892, 7134, 6520, 5842, 5508, 5190, 4398,
+      3472, 3260, 2895, 2102, 1656, 1442, 1163, 901, 332]
+    objective: 36439.59503370297
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 13, 18, 15, 17, 19, 20, 16]
+    profit: 36730
+    rental: 6.313151441239708
+    total_travel_time: 290.4049662970266
+    velocity: [2000.0, 2000.0, 2000.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0,
+      1767.0, 1510.0, 1510.0, 1510.0, 1510.0, 1510.0, 1298.0, 1298.0, 1183.0, 1183.0,
+      1058.0]
+    weight: [0, 0, 0, 233, 233, 233, 233, 233, 233, 233, 490, 490, 490, 490, 490,
+      702, 702, 817, 817, 942]
+  status: SATISFIED
+  time: 49.27
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [10072, 9448, 8685, 8242, 7873, 7115, 6501, 5823, 5489, 5171, 4379,
+      3453, 3241, 2876, 2674, 2016, 1570, 1421, 1142, 332]
+    objective: 36439.71291555001
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 13, 20, 18, 15, 19, 17, 16]
+    profit: 36730
+    rental: 6.310588792391108
+    total_travel_time: 290.287084449991
+    velocity: [2000.0, 2000.0, 2000.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0,
+      1767.0, 1510.0, 1510.0, 1510.0, 1510.0, 1510.0, 1510.0, 1298.0, 1183.0, 1183.0,
+      1058.0]
+    weight: [0, 0, 0, 233, 233, 233, 233, 233, 233, 233, 490, 490, 490, 490, 490,
+      490, 702, 817, 817, 942]
+  status: SATISFIED
+  time: 51.907
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [10004, 9380, 8617, 8174, 7805, 7047, 6433, 5755, 5421, 5103, 4311,
+      3385, 3173, 2808, 2606, 1948, 1505, 1356, 1142, 332]
+    objective: 36442.69894859019
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 13, 20, 18, 19, 15, 17, 16]
+    profit: 36730
+    rental: 6.245675030648116
+    total_travel_time: 287.3010514098133
+    velocity: [2000.0, 2000.0, 2000.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0,
+      1767.0, 1510.0, 1510.0, 1510.0, 1510.0, 1510.0, 1510.0, 1395.0, 1183.0, 1183.0,
+      1058.0]
+    weight: [0, 0, 0, 233, 233, 233, 233, 233, 233, 233, 490, 490, 490, 490, 490,
+      490, 605, 817, 817, 942]
+  status: SATISFIED
+  time: 52.017
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [9905, 9281, 8518, 8075, 7706, 6948, 6334, 5656, 5322, 5004, 4212,
+      3286, 3074, 2709, 2507, 2245, 1802, 1356, 1142, 332]
+    objective: 36443.85645529578
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 13, 20, 19, 18, 15, 17, 16]
+    profit: 36730
+    rental: 6.220511841396057
+    total_travel_time: 286.1435447042186
+    velocity: [2000.0, 2000.0, 2000.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0,
+      1767.0, 1510.0, 1510.0, 1510.0, 1510.0, 1510.0, 1395.0, 1395.0, 1183.0, 1183.0,
+      1058.0]
+    weight: [0, 0, 0, 233, 233, 233, 233, 233, 233, 233, 490, 490, 490, 490, 490,
+      605, 605, 817, 817, 942]
+  status: SATISFIED
+  time: 52.245
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [9629, 9005, 8242, 7799, 7430, 6672, 6058, 5380, 5046, 4728, 3936,
+      3010, 2798, 2193, 1747, 1533, 1254, 992, 790, 332]
+    objective: 36452.90292978041
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 18, 15, 17, 19, 20, 13, 16]
+    profit: 36730
+    rental: 6.023849352599871
+    total_travel_time: 277.0970702195941
+    velocity: [2000.0, 2000.0, 2000.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0,
+      1767.0, 1510.0, 1510.0, 1510.0, 1510.0, 1298.0, 1298.0, 1183.0, 1183.0, 1183.0,
+      1058.0]
+    weight: [0, 0, 0, 233, 233, 233, 233, 233, 233, 233, 490, 490, 490, 490, 702,
+      702, 817, 817, 817, 942]
+  status: SATISFIED
+  time: 77.847
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [9538, 8914, 8151, 7708, 7339, 6581, 5967, 5289, 4955, 4637, 3845,
+      3134, 2769, 2557, 2102, 1656, 1442, 1163, 901, 332]
+    objective: 36456.44139131887
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 12, 18, 15, 17, 19, 20, 16]
+    profit: 36730
+    rental: 5.946926275676795
+    total_travel_time: 273.5586086811326
+    velocity: [2000.0, 2000.0, 2000.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0,
+      1767.0, 1510.0, 1510.0, 1510.0, 1510.0, 1510.0, 1298.0, 1298.0, 1183.0, 1183.0,
+      1058.0]
+    weight: [0, 0, 0, 233, 233, 233, 233, 233, 233, 233, 490, 490, 490, 490, 490,
+      702, 702, 817, 817, 942]
+  status: SATISFIED
+  time: 474.523
+- configuration: Gecode
+  data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn
+  model: travelling-thief/ttp.mzn
+  problem: travelling-thief
+  solution:
+    chosen: [false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, true,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, true, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, true, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      true, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false, false, false, false, false,
+      false, false, false, false, false, false, false]
+    distAtTime: [9439, 8815, 8052, 7609, 7240, 6482, 5868, 5190, 4856, 4538, 3746,
+      2860, 2648, 2193, 1747, 1533, 1254, 992, 790, 332]
+    objective: 36458.69100925061
+    order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 14, 12, 18, 15, 17, 19, 20, 13, 16]
+    profit: 36730
+    rental: 5.898021538030335
+    total_travel_time: 271.3089907493954
+    velocity: [2000.0, 2000.0, 2000.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0, 1767.0,
+      1767.0, 1510.0, 1510.0, 1510.0, 1510.0, 1298.0, 1298.0, 1183.0, 1183.0, 1183.0,
+      1058.0]
+    weight: [0, 0, 0, 233, 233, 233, 233, 233, 233, 233, 490, 490, 490, 490, 702,
+      702, 817, 817, 817, 942]
+  status: SATISFIED
+  time: 835.069
+- {configuration: Gecode, data_file: travelling-thief/data/n20_k20_c1000_l1000_u2000_r46.dzn,
+  model: travelling-thief/ttp.mzn, problem: travelling-thief, status: SATISFIED}
