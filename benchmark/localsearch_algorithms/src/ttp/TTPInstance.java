@@ -215,7 +215,7 @@ public class TTPInstance {
                     if (debugPrint) 
                             System.out.print("itemIndex="+itemIndex+" ");
 
-                    if (z[itemIndex]==1) {
+                    if (z[indexOfPackingPlan]==1) {
 
                         int currentWC = this.items[itemIndex][2];
                         weightUntilNow = weightUntilNow + currentWC;            // for debugging purposes only
