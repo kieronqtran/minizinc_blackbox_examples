@@ -2,11 +2,6 @@
 
 int: mode; %%  -2  decomposition
            %%  0   minimal
-           %%  6   Domain
-           %%  9   LB smart learning
-           %%  10  LB no daemon
-           %%  11  LB trivial learning
-           %%  12  LB + decomposition
 
 
 enum CASES = { MinDis % Minimise dispersion (bound on efficiency)
@@ -22,9 +17,10 @@ enum CASES = { MinDis % Minimise dispersion (bound on efficiency)
 
 CASES: Case;
 
-mode = 0;
+mode = -1;
 
 Case = MinDis;
+
 
 % === Parameters ================================================== %
 
@@ -98,9 +94,8 @@ constraint forall (j in J, t in T)
 
 array [A] of var 1..500000000: util::output;
 var 1..500000000: UTIL::output;
-var 0..500000000: disp::output
-;
-%var 0..500000000: disp2;
+var 0..500000000: disp::output;
+var int: max_done::output = max(done);
 
 constraint UTIL = sum(util);
 
@@ -110,12 +105,13 @@ constraint forall (a in A)
 
 include "experimental/blackbox.mzn";
 
-constraint if Case in {MinDis, MaxEff} then
-                gini_decomp(util, UTIL, disp, 10000)
-%             blackbox([10000] ++ util, [], [disp], []) ::blackbox_dll("libbb_gini.so") /\ UTIL = sum(util)
-           else
-             disp = 1
-           endif;
+% constraint if Case in {MinDis, MaxEff} then
+%               gini(disp, util, UTIL, 10000)
+%            else
+%              disp = 1
+%            endif;
+
+constraint gini(disp, util, UTIL, 10000);
 
 % Bound on efficiency
 constraint (Case = MinDis) ->
@@ -134,8 +130,7 @@ constraint if Case = MinDis then
            elseif Case in {MaxEff, FndBnd} then
              obj = -UTIL % TODO
            else %if Case = Mkspan/MakespanPeter then
-             forall (j in J)
-              ( done[j] <= obj )
+              max(done) <= obj
            endif;
 
 ann: searchann = if Case in {Mkspan, MkspanPeter, FndBnd, MaxEff} then
@@ -159,21 +154,19 @@ solve :: searchann minimize obj;
 %%         9 = Gini Lb Propagator as in paper.
 %%         0 = Propagate Gini when X fixed.
 
-% predicate gini(var int: v, array [int] of var int: X, var int: S, int: scale) =
-%   if mode = -1 \/ mode = -2 then
-%     gini_decomp(X, S, v, scale)
-%   elseif mode = 12 then
-%     gini_decomp(X, S, v, scale) /\ gini_int(v, X, S, scale, 9)
-%   else
-%     gini_int(v, X, S, scale, mode)
-%   endif;
-  
+predicate gini(var int: v, array [int] of var int: X, var int: S, int: scale) =
+  if mode = -2 then
+    gini_decomp(X, S, v, scale)
+ elseif mode = -1 then
+    blackbox([scale] ++ util, [], [v], []) ::blackbox_exec("/opt/anaconda3/bin/python3 bb_gini_py/bb_gini.py")
+  else
+    blackbox([scale] ++ util, [], [v], []) ::blackbox_dll("./libbb_gini.so")
+  endif;
+
 predicate gini_decomp(array[int] of var int: X, var int: M, var int: v, int: s) =
   let { int: n=length(X);
         array[int] of var 0..500000000: diffs = [ abs(X[i]-X[j]) | i,j in index_set(X) where i<j];
-        var 0..500000000: tot_diff = sum(diffs) * s; 
+        var 0..500000000: tot_diff = sum(diffs) * s;
         var 0..500000000: result_ = tot_diff div n;
         var 0..500000000: result = abs(result_) div abs(M)}
   in v = result;
-
-% predicate gini_int(var int: y, array [int] of var int: x, var int: sum, int: s, int: mode);
