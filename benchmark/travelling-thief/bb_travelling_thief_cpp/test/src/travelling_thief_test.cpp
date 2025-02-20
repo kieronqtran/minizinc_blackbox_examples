@@ -5,44 +5,6 @@
 
 #include <gtest/gtest.h>
 
-TEST(TravelingThiefTest, TestWeight)
-{
-  std::vector<traveling_thief::Item> items = {
-        {9665, 6534, 2},
-        {5393, 3700, 2},
-        {3324, 9110, 2},
-        {4823, 2656, 3},
-        {8968, 9789, 3},
-        {7715, 1925, 3},
-        {1743, 3194, 4},
-        {3432, 4325, 4},
-        {4604, 3877, 4},
-        {2220, 3815, 5},
-        {5965, 9176, 5},
-        {5152, 5809, 5},
-        {3181, 3473, 6},
-        {6830, 658, 6},
-        {1792, 3607, 6},
-        {7552, 8732, 7},
-        {2971, 7032, 7},
-        {9780, 6878, 7},
-        {5816, 8150, 8},
-        {7851, 9291, 8},
-        {3842, 9504, 8},
-        {4843, 3579, 9},
-        {8989, 9904, 9},
-        {1001, 9343, 9},
-        {5358, 4294, 10},
-        {7725, 5857, 10},
-        {277, 2654, 10}
-      };
-    std::vector<int> chosen = {0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0};
-    std::vector<int> orders = {1, 2, 8, 10, 4, 9, 3, 7, 5, 6};
-    std::vector<int> weights = traveling_thief::calculate_weights(orders, chosen, items, 3);
-    std::vector<int> expected = {0, 0, 0, 0, 0, 0, 1925, 1925, 1925, 2583};
-    ASSERT_EQ(weights, expected);
-}
-
 TEST(TravelingThiefTest, CheckValues)
 {
 
@@ -71,7 +33,7 @@ TEST(TravelingThiefTest, CheckValues)
       orders,
       weights
   );
-  ASSERT_NEAR(result, 19.7926, 1e-4);
+  ASSERT_EQ(result, 14.0);
 }
 
 int main(int argc, char **argv)

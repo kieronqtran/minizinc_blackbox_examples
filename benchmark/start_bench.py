@@ -13,9 +13,10 @@ driver = minizinc.Driver.find([os.getenv("MINIZINC_PATH", default=shutil.which("
 
 schedule(
     instances=Path("./instances.csv"),
-    timeout=timedelta(minutes=int(os.getenv("TIMEOUT_MIN", default="15"))),
+    timeout=timedelta(minutes=int(os.getenv("TIMEOUT_MIN", default=15))),
 
     configurations=[
         Configuration(name="Gecode", solver=minizinc.Solver.lookup("gecode", driver=driver)),
+        # Configuration(name="Alantis", solver=minizinc.Solver.lookup("se.uu.it.atlantis", driver=driver, refresh=True)),
     ],
 )

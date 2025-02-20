@@ -79,8 +79,12 @@ constraint sum (i in ITEM) (chosen[i] * items[i].weight) <= knapsack_capacity;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 
 
+% weight of the knapsack at any given time 
+set of int: WEIGHT = 0..knapsack_capacity;
+array [TIME] of var WEIGHT: weight;
+
 var int: profit :: output = sum (i in ITEM) (chosen[i] * items[i].profit);
-var 0.0..(max(distances) * card(TIME) * renting_ratio) / min_speed: rental; % Limit domain Prevent Gecode floating point error
+var 0.0..(max(distances) * card(TIME) * renting_ratio) / min_speed: rental; % Prevent Gecode floating point error
 
 constraint blackbox([
         max_speed,
@@ -88,14 +92,25 @@ constraint blackbox([
         knapsack_capacity,
         bb_distance_n,
         card(TIME),         % number of orders
-        nitems,             % number of items
-        ncities             % number of cities
+        card(TIME)          % length of weights
         ] ++ order
-          ++ chosen,
+          ++ weight,
         [renting_ratio],
         [],
         [rental]
     ) ::blackbox_dll("./libbb_travelling_thief.so");
+
+
+% in the first trip (from city 1 to whatever) the knapsack is empty
+constraint weight[1] = 0;
+% 
+constraint forall (t in TIME where t > 1) (
+    weight[t] = weight[enum_prev(t)] + sum (i in 1..itemsPerCity) (
+        let {
+            any: item = city_items[order[t], i]
+        } in chosen[item] * items[item].weight
+    )
+);
 
 array [CITY] of var TIME: time = inverse(order);
 array [TIME, 1..itemsPerCity] of var bool: chosen_order = [

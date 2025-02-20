@@ -1,20 +1,17 @@
-#include <iostream>
 #include <vector>
-#include <algorithm>
 #include <map>
 #include <utility>
 
-#include <assert.h>
-#include <stddef.h>
+#include <cstddef>
 
 #include <bb_travelling_thief/travelling_thief.h>
 
 namespace travelling_thief {
 
   std::vector<int> cal_velocity(int max_speed, double nu, std::vector<int>& weights) {
-    std::vector<int> velocity;
-    for (int i = 0; i < weights.size(); ++i) {
-      velocity.push_back(static_cast<int>(max_speed - (nu / 1000) * weights[i]));
+    std::vector<int> velocity(0);
+    for (int weight : weights) {
+      velocity.push_back(static_cast<int>(max_speed - (nu / 1000) * weight));
     }
     return velocity;
   }
