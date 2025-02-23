@@ -1,0 +1,79 @@
+- configuration: MaxEff_Gecode_BB
+  data_file: dzn/ta45_3a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 15311
+    disp: 1
+    done: [null, null, null, null, null, null, null, null, null, null, null, 1490,
+      1235, null, 1221, 1216, 1402, null, 1583, 1355, 1663, 1280, 1326, 1945, null,
+      1990, null, 1516, 1915, 2110]
+    max_done: 2110
+    obj: -15311
+    objective: -15311
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null]
+    - [0, 2, 84, 200, 276, 346, 399, 488, 550, 627, 633, 731, 757, 780, 818, 920,
+      1063, 1192, 1284, 1452]
+    - [0, 98, 183, 238, 290, 377, 402, 487, 520, 562, 679, 738, 829, 920, 936, 966,
+      1028, 1098, 1112, 1216]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null]
+    - [0, 112, 144, 200, 304, 356, 404, 411, 485, 518, 587, 644, 712, 757, 822, 870,
+      905, 968, 1028, 1123]
+    - [2, 61, 148, 279, 290, 369, 459, 509, 550, 584, 707, 768, 835, 905, 936, 941,
+      1006, 1091, 1149, 1206]
+    - [0, 35, 144, 161, 255, 344, 404, 475, 503, 573, 720, 802, 936, 1010, 1051, 1108,
+      1235, 1306, 1356, 1358]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null]
+    - [0, 65, 127, 217, 399, 485, 551, 577, 621, 719, 750, 888, 992, 1078, 1114, 1163,
+      1186, 1245, 1402, 1534]
+    - [86, 123, 168, 192, 280, 298, 354, 396, 488, 575, 671, 762, 801, 888, 968, 1010,
+      1026, 1108, 1245, 1319]
+    - [0, 183, 237, 246, 344, 479, 613, 681, 802, 812, 895, 916, 1042, 1221, 1257,
+      1348, 1400, 1409, 1458, 1583]
+    - [0, 11, 89, 148, 195, 280, 304, 359, 446, 487, 518, 619, 731, 802, 871, 968,
+      1100, 1143, 1200, 1257]
+    - [0, 29, 218, 237, 240, 244, 257, 396, 470, 472, 538, 619, 681, 780, 1011, 1078,
+      1147, 1174, 1247, 1319]
+    - [0, 29, 217, 281, 712, 802, 870, 1010, 1051, 1108, 1280, 1385, 1389, 1469, 1534,
+      1605, 1626, 1682, 1755, 1848]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null]
+    - [0, 230, 286, 354, 459, 499, 565, 633, 831, 916, 968, 1063, 1119, 1355, 1663,
+      1762, 1801, 1807, 1883, 1917]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null]
+    - [0, 98, 257, 377, 441, 445, 472, 568, 593, 671, 776, 828, 869, 960, 1022, 1100,
+      1192, 1284, 1372, 1452]
+    - [0, 88, 894, 1108, 1122, 1130, 1200, 1210, 1247, 1348, 1375, 1473, 1568, 1605,
+      1628, 1643, 1730, 1784, 1801, 1875]
+    - [63, 123, 286, 318, 403, 489, 565, 588, 661, 714, 904, 1022, 1472, 1762, 1818,
+      1911, 1963, 2046, 2047, 2064]
+    util: [5101, 5105, 5105]
+  status: SATISFIED
+  time: 424.639
+- {configuration: MaxEff_Gecode_BB, data_file: dzn/ta45_3a_alloc2.dzn, model: jobshop_gini.mzn,
+  problem: ., status: SATISFIED}
