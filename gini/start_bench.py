@@ -16,12 +16,8 @@ schedule(
     timeout=timedelta(minutes=int(os.getenv("TIMEOUT_MIN", default=10)) ),
 
     configurations=[
-        Configuration(name="Median_Gecode_BB", solver=minizinc.Solver.lookup("gecode", driver=driver), extra_data={"mode": -1, "Case": "MedianPeter"}),
-        Configuration(name="Median_Gecode_Decomp", solver=minizinc.Solver.lookup("gecode", driver=driver), extra_data={"mode": -2, "Case": "MedianPeter"}),
-        Configuration(name="MinDis_Gecode_BB", solver=minizinc.Solver.lookup("gecode", driver=driver), extra_data={"mode": -1, "Case": "MinDis"}),
-        Configuration(name="MinDis_Gecode_Decomp", solver=minizinc.Solver.lookup("gecode", driver=driver), extra_data={"mode": -2, "Case": "MinDis"}),
-        Configuration(name="MaxEff_Gecode_BB", solver=minizinc.Solver.lookup("gecode", driver=driver), extra_data={"mode": -1, "Case": "MaxEff"}),
-        Configuration(name="MaxEff_Gecode_Decomp", solver=minizinc.Solver.lookup("gecode", driver=driver), extra_data={"mode": -2, "Case": "MaxEff"}),
+        Configuration(name="Gecode_BB", solver=minizinc.Solver.lookup("gecode", driver=driver), extra_data={"mode": -1}),
+        Configuration(name="Gecode_Decomp", solver=minizinc.Solver.lookup("gecode", driver=driver), extra_data={"mode": -2}),
     ],
     nodelist=["extra001"]
 )

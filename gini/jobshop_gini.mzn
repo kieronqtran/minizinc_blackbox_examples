@@ -18,6 +18,9 @@ enum CASES = { MinDis % Minimise dispersion (bound on efficiency)
 
 CASES: Case;
 
+mode = -2;
+
+Case = MaxEff;
 
 % === Parameters ================================================== %
 
@@ -85,7 +88,7 @@ constraint forall (m in M)
                [ occurs(start[j,t])*dur[j,t] | j in J, t in T where mac[j,t]=m ],
                [ 1                           | j in J, t in T where mac[j,t]=m ],
                  1 ) 
- ) endif;
+ );
 
 % start-done channelling
 % GT: Looks correct
@@ -130,7 +133,6 @@ var int: obj;
 
 constraint if Case in {MinDis, MaxEff} then
              gini(disp, util, UTIL, 10000)
-             /\ max_done > 0 % a bit hacking to remove the non-job done
            else
              disp = 1
            endif;
@@ -146,8 +148,7 @@ constraint if Case = MinDis then
              obj = -median(util)
            elseif Case in {Mkspan, MkspanPeter} then
               max(done) <= obj
-           else assert(false, "Invalid Case value")
-           endif;
+           else assert(false, "Invalid Case value") endif;
 
 ann: searchann = seq_search([int_search([if occurs(start[i,j]) then deopt(start[i,j]) else -1 endif | i in J, j in T],
                                           smallest, indomain_min, complete ),
