@@ -1,0 +1,2192 @@
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11504
+    disp: 1456
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, 1009, 943, 795, 877, 1064,
+      1154, 1040, 1224, 946, 1384, 1197, 1451, 1541, 1395, 1679, 1291]
+    max_done: 1679
+    obj: 1456
+    objective: 1456
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 129, 209, 285, 359, 380, 435, 467, 531, 623, 683, 780, 850, 918]
+    - [41, 137, 150, 225, 241, 247, 270, 368, 467, 515, 548, 646, 678, 759, 848]
+    - [0, 84, 131, 198, 308, 326, 359, 435, 480, 531, 559, 672, 690, 731, 788]
+    - [0, 84, 131, 165, 214, 225, 303, 319, 358, 433, 471, 608, 678, 710, 791]
+    - [137, 230, 270, 276, 375, 390, 426, 450, 543, 646, 708, 758, 811, 943, 1002]
+    - [0, 77, 236, 359, 441, 480, 562, 597, 717, 780, 784, 927, 950, 986, 1080]
+    - [0, 44, 209, 325, 398, 432, 470, 534, 605, 621, 791, 877, 935, 981, 1033]
+    - [0, 58, 74, 172, 241, 441, 497, 576, 677, 761, 907, 986, 1074, 1116, 1198]
+    - [230, 264, 326, 408, 411, 418, 433, 455, 526, 548, 759, 814, 850, 900, 910]
+    - [98, 169, 172, 285, 319, 379, 814, 848, 881, 950, 986, 1154, 1155, 1196, 1294]
+    - [67, 151, 231, 375, 411, 497, 529, 537, 559, 635, 900, 916, 980, 1044, 1114]
+    - [1, 169, 214, 359, 398, 451, 758, 848, 1002, 1033, 1114, 1161, 1246, 1332, 1413]
+    - [191, 230, 379, 450, 605, 639, 672, 710, 843, 1009, 1155, 1294, 1387, 1462,
+      1532]
+    - [0, 45, 129, 151, 223, 308, 361, 390, 937, 987, 1080, 1103, 1216, 1291, 1308]
+    - [230, 303, 310, 658, 987, 1000, 1023, 1117, 1161, 1216, 1309, 1386, 1532, 1571,
+      1604]
+    - [25, 54, 114, 141, 289, 368, 471, 545, 596, 639, 761, 1000, 1117, 1197, 1206]
+    util: [2200, 1531, 2096, 2104, 3573]
+  status: SATISFIED
+  time: 4.354
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11493
+    disp: 1449
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, 1157, 943, 1123, 696, 1315,
+      1244, null, 977, 1191, 892, 1252, 1324, 1376, 1319, 1344, 1718, 1488]
+    max_done: 1718
+    obj: 1449
+    objective: 1449
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 12, 57, 138, 230, 311, 467, 524, 592, 722, 819, 914, 983, 1081, 1106]
+    - [0, 44, 129, 209, 307, 381, 384, 445, 477, 497, 592, 652, 714, 784, 852]
+    - [41, 137, 150, 262, 278, 284, 307, 395, 477, 532, 565, 819, 833, 944, 1028]
+    - [0, 84, 131, 198, 236, 264, 319, 368, 403, 454, 482, 602, 620, 661, 689]
+    - [0, 84, 131, 165, 278, 289, 404, 490, 581, 663, 773, 975, 1045, 1077, 1229]
+    - [137, 230, 264, 270, 412, 416, 649, 673, 845, 943, 960, 1010, 1063, 1123, 1182]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 209, 236, 369, 403, 441, 516, 587, 603, 699, 833, 898, 944, 970]
+    - [0, 58, 74, 172, 241, 381, 411, 514, 673, 757, 863, 942, 976, 1083, 1165]
+    - [271, 297, 359, 404, 441, 448, 463, 524, 604, 623, 710, 784, 796, 846, 856]
+    - [98, 169, 172, 285, 398, 480, 574, 701, 734, 852, 888, 988, 989, 1037, 1162]
+    - [12, 138, 272, 454, 498, 734, 942, 944, 966, 1010, 1083, 1099, 1107, 1171, 1241]
+    - [1, 169, 214, 359, 361, 416, 486, 608, 697, 757, 1028, 1077, 1171, 1257, 1338]
+    - [191, 230, 247, 395, 482, 516, 552, 603, 689, 773, 805, 944, 1165, 1240, 1310]
+    - [0, 45, 188, 203, 458, 549, 623, 652, 765, 851, 960, 983, 1102, 1240, 1257]
+    - [230, 241, 289, 796, 815, 828, 1135, 1252, 1254, 1309, 1402, 1479, 1571, 1610,
+      1643]
+    - [25, 54, 114, 141, 289, 368, 435, 652, 1075, 1102, 1122, 1127, 1315, 1394, 1403]
+    util: [2200, 1531, 2096, 2104, 3562]
+  status: SATISFIED
+  time: 4.575
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11367
+    disp: 1377
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, 893, null, 1052, 980, 978, 905, 947,
+      null, 1050, 1245, 1043, 1314, 1026, 1256, 1471, 1323, 1609, 1490]
+    max_done: 1609
+    obj: 1377
+    objective: 1377
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 2, 22, 71, 114, 163, 230, 368, 454, 515, 629, 662, 682, 766, 826]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 129, 209, 294, 368, 391, 446, 478, 508, 626, 686, 757, 893, 961]
+    - [41, 163, 176, 249, 265, 271, 294, 382, 478, 515, 548, 646, 706, 787, 885]
+    - [0, 84, 131, 198, 249, 264, 319, 446, 585, 636, 662, 819, 837, 943, 971]
+    - [2, 84, 131, 176, 225, 236, 314, 368, 382, 463, 501, 636, 706, 738, 819]
+    - [137, 230, 264, 270, 409, 413, 450, 474, 573, 646, 678, 748, 801, 826, 885]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 209, 236, 369, 403, 441, 558, 629, 645, 837, 923, 971, 1017, 1043]
+    - [0, 60, 103, 199, 320, 447, 505, 593, 761, 878, 953, 1032, 1095, 1137, 1219]
+    - [301, 302, 364, 409, 441, 448, 463, 485, 683, 728, 821, 876, 947, 997, 1007]
+    - [98, 169, 180, 285, 324, 413, 787, 821, 873, 961, 1007, 1095, 1096, 1126, 1224]
+    - [0, 84, 302, 403, 419, 505, 537, 561, 583, 605, 741, 801, 809, 873, 943]
+    - [3, 169, 225, 297, 309, 322, 359, 419, 584, 615, 686, 738, 942, 1137, 1218]
+    - [191, 230, 260, 474, 662, 696, 729, 823, 1017, 1101, 1128, 1224, 1317, 1392,
+      1462]
+    - [0, 45, 134, 149, 384, 469, 702, 731, 876, 926, 1052, 1075, 1183, 1219, 1236]
+    - [230, 314, 321, 583, 926, 939, 1032, 1126, 1128, 1183, 1276, 1353, 1462, 1501,
+      1534]
+    - [25, 54, 114, 141, 241, 376, 477, 731, 753, 780, 845, 939, 1317, 1396, 1405]
+    util: [2200, 1531, 2096, 2104, 3436]
+  status: SATISFIED
+  time: 4.88
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11475
+    disp: 1247
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, 1094, null, null, 1106, 1121, 1061, 785,
+      1424, null, 1186, 1202, 1161, 1396, 1588, 1490, 1453, 1478, 1751, 1479]
+    max_done: 1751
+    obj: 1247
+    objective: 1247
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 41, 136, 198, 206, 265, 328, 468, 594, 616, 693, 778, 933, 942, 1015]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 129, 209, 285, 389, 405, 482, 552, 580, 657, 719, 877, 947, 1015]
+    - [136, 257, 308, 389, 405, 411, 434, 522, 604, 641, 674, 785, 831, 942, 1026]
+    - [0, 84, 131, 206, 381, 424, 552, 601, 657, 708, 778, 877, 895, 1026, 1054]
+    - [0, 84, 131, 165, 223, 234, 312, 320, 328, 396, 434, 510, 586, 618, 699]
+    - [232, 328, 389, 395, 541, 641, 877, 901, 1054, 1107, 1176, 1226, 1279, 1303,
+      1362]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 209, 244, 317, 351, 410, 460, 618, 634, 732, 878, 1107, 1153, 1179]
+    - [0, 58, 74, 172, 241, 359, 389, 514, 609, 693, 799, 895, 985, 1094, 1176]
+    - [325, 362, 424, 601, 604, 611, 626, 648, 719, 738, 912, 967, 979, 1115, 1125]
+    - [98, 169, 172, 285, 392, 469, 708, 772, 805, 874, 1027, 1115, 1116, 1208, 1306]
+    - [0, 84, 326, 494, 604, 805, 908, 928, 953, 1226, 1299, 1315, 1371, 1435, 1505]
+    - [1, 169, 214, 257, 317, 327, 364, 742, 831, 901, 1153, 1200, 1285, 1371, 1452]
+    - [191, 265, 452, 522, 610, 699, 734, 771, 849, 933, 975, 1021, 1299, 1374, 1444]
+    - [0, 45, 134, 164, 223, 400, 453, 482, 967, 1021, 1124, 1147, 1245, 1374, 1391]
+    - [230, 312, 319, 396, 1017, 1030, 1114, 1285, 1287, 1342, 1435, 1512, 1604, 1643,
+      1676]
+    - [25, 54, 114, 141, 289, 453, 520, 670, 717, 744, 950, 1030, 1306, 1385, 1394]
+    util: [2994, 1531, 2096, 2104, 2750]
+  status: SATISFIED
+  time: 6.36
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11371
+    disp: 1222
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, 922, 843, null, 1081, 1108, 1031, 1066,
+      1358, null, 870, 1309, 1342, 1492, 1691, 1137, null, 1387, 1613, 1458]
+    max_done: 1691
+    obj: 1222
+    objective: 1222
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 41, 136, 198, 206, 265, 328, 415, 499, 524, 567, 652, 782, 791, 843]
+    - [0, 2, 22, 71, 114, 163, 232, 359, 438, 484, 562, 612, 632, 716, 776]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 129, 209, 285, 389, 397, 452, 521, 598, 675, 735, 797, 922, 990]
+    - [136, 257, 308, 381, 397, 438, 461, 549, 621, 658, 716, 814, 830, 912, 1013]
+    - [0, 84, 131, 206, 381, 392, 499, 548, 675, 726, 752, 851, 869, 996, 1024]
+    - [2, 84, 131, 165, 223, 234, 312, 320, 328, 396, 434, 726, 867, 899, 980]
+    - [303, 425, 461, 499, 632, 658, 688, 712, 837, 890, 990, 1040, 1172, 1196, 1296]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 209, 244, 317, 351, 410, 455, 526, 542, 638, 724, 791, 837, 863]
+    - [0, 60, 103, 199, 281, 467, 548, 687, 851, 935, 1066, 1145, 1159, 1201, 1283]
+    - [396, 459, 567, 627, 630, 814, 890, 912, 1018, 1040, 1127, 1234, 1246, 1296,
+      1306]
+    - [98, 169, 180, 285, 392, 452, 796, 830, 863, 1127, 1201, 1290, 1291, 1304, 1402]
+    - [0, 84, 397, 911, 927, 1081, 1145, 1246, 1268, 1300, 1450, 1466, 1474, 1538,
+      1608]
+    - [3, 169, 214, 257, 317, 327, 364, 410, 630, 661, 735, 782, 932, 1018, 1099]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 45, 134, 164, 223, 471, 562, 641, 927, 983, 1113, 1136, 1234, 1283, 1300]
+    - [191, 202, 234, 304, 351, 524, 547, 680, 1024, 1079, 1172, 1358, 1450, 1489,
+      1538]
+    - [25, 54, 114, 141, 202, 547, 614, 777, 1079, 1106, 1126, 1182, 1225, 1304, 1373]
+    util: [2994, 1531, 2096, 2104, 2646]
+  status: SATISFIED
+  time: 8.649
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11525
+    disp: 1210
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, 1068, null, null, null, 1002, 1123, 898, 1286,
+      1467, null, 905, 1177, 1016, 1474, 1309, 1418, 1355, 1380, 1706, 1557]
+    max_done: 1706
+    obj: 1210
+    objective: 1210
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 45, 99, 214, 247, 289, 364, 486, 585, 649, 766, 810, 891, 892, 970]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 99, 179, 255, 329, 380, 435, 467, 508, 585, 645, 773, 843, 911]
+    - [41, 137, 150, 225, 289, 329, 398, 486, 609, 646, 695, 812, 827, 944, 1028]
+    - [0, 84, 131, 198, 236, 264, 297, 435, 457, 517, 579, 678, 696, 798, 891]
+    - [0, 84, 131, 165, 214, 225, 303, 346, 678, 793, 872, 984, 1054, 1090, 1200]
+    - [137, 230, 352, 358, 476, 480, 746, 770, 1028, 1100, 1151, 1201, 1254, 1346,
+      1405]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 179, 236, 321, 355, 393, 444, 576, 592, 696, 782, 826, 872, 898]
+    - [0, 58, 74, 172, 241, 358, 440, 519, 770, 854, 934, 1013, 1027, 1069, 1151]
+    - [230, 297, 359, 519, 522, 529, 544, 566, 646, 679, 772, 854, 866, 970, 980]
+    - [98, 169, 172, 255, 311, 404, 649, 831, 864, 997, 1069, 1157, 1171, 1286, 1384]
+    - [0, 84, 231, 305, 354, 440, 487, 866, 902, 924, 1068, 1084, 1092, 1156, 1226]
+    - [1, 169, 247, 359, 361, 480, 517, 683, 772, 888, 1081, 1128, 1213, 1299, 1380]
+    - [191, 230, 247, 311, 515, 549, 582, 619, 714, 864, 924, 1013, 1201, 1276, 1346]
+    - [0, 205, 388, 549, 688, 782, 835, 864, 934, 984, 1077, 1100, 1226, 1276, 1293]
+    - [230, 303, 310, 915, 1054, 1067, 1106, 1213, 1228, 1283, 1376, 1467, 1559, 1598,
+      1631]
+    - [25, 54, 114, 141, 364, 443, 510, 665, 687, 714, 934, 1067, 1384, 1463, 1472]
+    util: [2200, 1531, 2096, 2948, 2750]
+  status: SATISFIED
+  time: 13.531
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11421
+    disp: 1185
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, 1246, null, 899, null, 1102, 1094, 841, 1283,
+      1368, null, 1140, 1278, 1266, 1471, 1361, 1488, null, 1441, 1283, 1337]
+    max_done: 1488
+    obj: 1185
+    objective: 1185
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 45, 99, 176, 267, 329, 493, 618, 746, 843, 899, 943, 1028, 1070, 1148]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 2, 22, 71, 114, 163, 230, 329, 408, 433, 559, 592, 623, 707, 832]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 99, 179, 255, 329, 332, 387, 562, 669, 746, 806, 868, 943, 1011]
+    - [41, 163, 176, 279, 295, 408, 431, 519, 599, 636, 707, 805, 819, 915, 999]
+    - [0, 84, 131, 198, 249, 264, 297, 387, 396, 481, 519, 618, 714, 806, 834]
+    - [2, 84, 131, 209, 295, 306, 428, 478, 711, 805, 843, 955, 1025, 1057, 1197]
+    - [137, 230, 431, 447, 546, 570, 779, 803, 999, 1102, 1120, 1170, 1223, 1247,
+      1306]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 179, 236, 311, 345, 384, 429, 548, 644, 740, 826, 1052, 1098, 1133]
+    - [0, 60, 103, 199, 281, 437, 486, 636, 803, 887, 935, 1014, 1028, 1170, 1252]
+    - [301, 303, 436, 565, 568, 575, 621, 643, 726, 745, 900, 955, 1058, 1148, 1230]
+    - [98, 169, 180, 255, 289, 356, 546, 590, 745, 1011, 1158, 1247, 1248, 1283, 1381]
+    - [0, 84, 302, 376, 392, 478, 582, 887, 935, 1047, 1120, 1136, 1144, 1208, 1278]
+    - [3, 169, 258, 301, 309, 319, 429, 580, 669, 909, 1098, 1145, 1283, 1369, 1450]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 205, 467, 500, 559, 644, 814, 856, 1025, 1075, 1168, 1191, 1289, 1337, 1354]
+    - [191, 202, 209, 279, 298, 376, 399, 564, 566, 621, 889, 966, 1094, 1133, 1208]
+    - [25, 54, 114, 141, 202, 399, 482, 548, 643, 670, 936, 1075, 1118, 1197, 1252]
+    util: [2200, 1531, 2096, 2948, 2646]
+  status: SATISFIED
+  time: 15.803
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11342
+    disp: 1176
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, 1077, 1149, null, null, 1308, 1211, 828, null,
+      1465, 1549, null, 1375, null, 1357, 1706, 1327, 1731, 1579, 1046, 1577]
+    max_done: 1731
+    obj: 1176
+    objective: 1176
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 45, 99, 172, 237, 306, 385, 454, 565, 629, 675, 719, 834, 835, 979]
+    - [0, 41, 151, 198, 206, 288, 351, 501, 585, 607, 734, 880, 1023, 1059, 1070]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 41, 99, 179, 255, 329, 332, 438, 548, 629, 706, 766, 1077, 1149, 1217]
+    - [136, 248, 261, 387, 466, 472, 547, 635, 754, 791, 824, 922, 936, 1032, 1116]
+    - [0, 84, 131, 206, 244, 255, 289, 403, 415, 472, 635, 734, 752, 793, 821]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [232, 351, 426, 466, 565, 583, 819, 913, 1116, 1169, 1217, 1267, 1320, 1344,
+      1403]
+    - [0, 74, 244, 344, 706, 752, 834, 869, 1147, 1210, 1214, 1351, 1359, 1422, 1475]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 57, 73, 169, 381, 432, 585, 664, 843, 1011, 1059, 1152, 1166, 1267, 1349]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [84, 155, 158, 255, 334, 394, 745, 788, 821, 890, 997, 1092, 1093, 1138, 1267]
+    - [67, 151, 325, 399, 415, 501, 568, 927, 1070, 1349, 1465, 1481, 1489, 1553,
+      1623]
+    - [0, 155, 205, 248, 333, 343, 380, 779, 868, 949, 976, 1023, 1108, 1208, 1289]
+    - [177, 265, 394, 976, 1085, 1119, 1152, 1189, 1267, 1375, 1402, 1448, 1577, 1652,
+      1722]
+    - [0, 179, 329, 412, 471, 556, 612, 641, 868, 918, 1011, 1063, 1169, 1475, 1492]
+    - [216, 227, 234, 304, 323, 399, 454, 561, 563, 618, 711, 788, 899, 938, 971]
+    - [25, 54, 114, 141, 227, 422, 495, 561, 618, 645, 1161, 1166, 1236, 1315, 1492]
+    util: [2339, 1531, 2096, 2298, 3078]
+  status: SATISFIED
+  time: 20.934
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11322
+    disp: 1142
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, 1149, 930, null, null, 1089, 1501, 638, null,
+      1279, 1232, 922, 1242, null, 1532, 1566, 1279, 1689, 1512, 1235, null]
+    max_done: 1689
+    obj: 1142
+    objective: 1142
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 45, 99, 172, 237, 285, 360, 489, 626, 761, 807, 851, 932, 933, 1051]
+    - [0, 41, 151, 186, 194, 253, 316, 403, 487, 530, 582, 727, 826, 835, 851]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 99, 179, 255, 329, 332, 403, 528, 549, 626, 686, 826, 930, 998]
+    - [136, 248, 261, 387, 427, 447, 667, 755, 827, 998, 1089, 1187, 1201, 1322, 1406]
+    - [0, 84, 131, 148, 186, 197, 255, 304, 313, 364, 390, 532, 550, 591, 631]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [232, 325, 411, 450, 573, 656, 755, 779, 889, 942, 1031, 1081, 1134, 1158, 1217]
+    - [0, 77, 194, 329, 411, 450, 548, 583, 896, 959, 963, 1027, 1035, 1081, 1158]
+    - [0, 44, 179, 283, 364, 398, 473, 544, 615, 631, 727, 813, 843, 889, 915]
+    - [0, 57, 73, 169, 237, 417, 487, 566, 779, 863, 911, 990, 1011, 1134, 1216]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [84, 155, 158, 304, 398, 458, 690, 807, 864, 1216, 1252, 1340, 1341, 1344, 1442]
+    - [67, 151, 325, 724, 740, 840, 872, 890, 1004, 1252, 1325, 1341, 1349, 1413,
+      1483]
+    - [0, 155, 205, 248, 356, 390, 427, 740, 829, 863, 942, 989, 1074, 1160, 1241]
+    - [177, 253, 334, 912, 1053, 1087, 1123, 1160, 1238, 1322, 1349, 1442, 1535, 1610,
+      1680]
+    - [0, 205, 470, 485, 544, 629, 685, 714, 829, 911, 1187, 1210, 1406, 1408, 1425]
+    - [216, 227, 234, 304, 398, 411, 434, 528, 530, 591, 684, 959, 1051, 1090, 1160]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    util: [2994, 1531, 2096, 2298, 2403]
+  status: SATISFIED
+  time: 21.059
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11317
+    disp: 1110
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, 1063, 930, null, null, 1089, 1496, 630, 963, 1279,
+      925, null, 1298, null, 1399, 1554, 1360, 1644, 1577, 1937, null]
+    max_done: 1937
+    obj: 1110
+    objective: 1110
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 45, 99, 214, 247, 289, 364, 513, 630, 694, 740, 796, 877, 887, 965]
+    - [0, 41, 151, 186, 194, 253, 316, 403, 487, 532, 606, 692, 791, 800, 851]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 41, 99, 179, 255, 329, 383, 438, 470, 553, 630, 690, 791, 930, 998]
+    - [136, 247, 260, 438, 454, 462, 691, 779, 900, 998, 1089, 1194, 1208, 1317, 1401]
+    - [0, 84, 131, 148, 186, 197, 255, 304, 313, 365, 414, 536, 554, 595, 623]
+    - [0, 84, 131, 165, 214, 225, 303, 338, 346, 414, 452, 694, 764, 796, 877]
+    - [232, 325, 411, 454, 575, 656, 779, 803, 887, 940, 1031, 1081, 1134, 1158, 1217]
+    - [0, 74, 194, 329, 415, 454, 536, 571, 629, 692, 696, 760, 768, 798, 851]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 58, 74, 172, 241, 417, 487, 566, 803, 925, 973, 1063, 1077, 1190, 1272]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [98, 169, 172, 304, 397, 460, 764, 798, 831, 1081, 1119, 1207, 1208, 1211, 1309]
+    - [67, 151, 325, 399, 566, 652, 684, 887, 973, 1117, 1190, 1206, 1241, 1401, 1471]
+    - [1, 169, 260, 316, 318, 328, 365, 798, 887, 996, 1023, 1070, 1155, 1241, 1322]
+    - [191, 253, 333, 909, 996, 1030, 1063, 1155, 1233, 1317, 1344, 1390, 1490, 1565,
+      1635]
+    - [0, 179, 447, 462, 521, 606, 685, 714, 887, 995, 1187, 1210, 1471, 1473, 1490]
+    - [230, 303, 313, 1023, 1042, 1077, 1100, 1233, 1473, 1528, 1621, 1698, 1790,
+      1829, 1862]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    util: [2339, 1531, 2096, 2948, 2403]
+  status: SATISFIED
+  time: 21.429
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11408
+    disp: 512
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, 1047, null, null, null, null, 1288, 1127, 1067, 1155,
+      1445, null, 1192, 1156, 1195, 1159, 1312, 1566, 1680, 1510, 1090, 1406]
+    max_done: 1680
+    obj: 512
+    objective: 512
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 61, 129, 176, 326, 422, 443, 530, 563, 628, 754, 822, 907, 945, 988]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 176, 267, 343, 417, 420, 512, 580, 677, 888, 948, 1010, 1129, 1197]
+    - [41, 137, 150, 223, 256, 262, 285, 373, 544, 581, 614, 712, 805, 948, 1032]
+    - [0, 117, 164, 198, 308, 381, 425, 475, 487, 538, 631, 785, 803, 1032, 1060]
+    - [0, 84, 164, 274, 323, 334, 451, 474, 563, 712, 750, 886, 956, 988, 1069]
+    - [137, 230, 285, 291, 459, 581, 730, 803, 1060, 1113, 1197, 1247, 1300, 1324,
+      1383]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 262, 288, 390, 424, 462, 507, 587, 603, 699, 785, 1113, 1159, 1185]
+    - [0, 58, 74, 172, 241, 291, 343, 422, 754, 844, 892, 971, 985, 1047, 1130]
+    - [230, 264, 326, 482, 485, 520, 535, 557, 679, 715, 956, 1011, 1080, 1130, 1159]
+    - [98, 169, 172, 233, 319, 379, 453, 487, 610, 679, 715, 892, 893, 971, 1069]
+    - [0, 84, 231, 424, 485, 571, 603, 838, 893, 915, 988, 1010, 1090, 1159, 1229]
+    - [1, 169, 323, 414, 416, 463, 507, 588, 677, 860, 1229, 1276, 1361, 1447, 1528]
+    - [191, 230, 379, 443, 578, 612, 645, 682, 1276, 1360, 1387, 1433, 1526, 1601,
+      1671]
+    - [0, 45, 134, 149, 223, 308, 361, 416, 538, 588, 750, 887, 1360, 1406, 1423]
+    - [230, 241, 248, 373, 440, 453, 486, 603, 605, 681, 774, 851, 943, 982, 1015]
+    - [25, 54, 114, 141, 289, 368, 435, 698, 720, 887, 985, 1011, 1155, 1312, 1321]
+    util: [2200, 2258, 2096, 2104, 2750]
+  status: SATISFIED
+  time: 41.49
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11337
+    disp: 465
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, 1148, null, null, 860, null, 1026, 1229, 1169, 1074,
+      1514, 1528, 1013, 1258, 1400, 1546, 1133, 1217, null, null, 1440, 1401]
+    max_done: 1546
+    obj: 465
+    objective: 465
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 61, 167, 234, 364, 478, 481, 510, 603, 680, 817, 868, 934, 988, 1089]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 2, 22, 71, 103, 152, 230, 317, 433, 458, 595, 628, 649, 733, 793]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 87, 167, 243, 332, 335, 390, 452, 481, 558, 618, 739, 860, 935]
+    - [41, 152, 165, 279, 295, 396, 419, 507, 579, 616, 733, 855, 902, 1050, 1134]
+    - [0, 117, 164, 249, 337, 419, 481, 628, 657, 708, 812, 1007, 1025, 1134, 1162]
+    - [2, 84, 164, 335, 390, 401, 479, 530, 543, 611, 665, 747, 869, 907, 988]
+    - [137, 230, 419, 558, 657, 728, 911, 972, 1162, 1215, 1266, 1316, 1369, 1393,
+      1452]
+    - [0, 77, 160, 425, 708, 825, 948, 1006, 1064, 1133, 1229, 1293, 1301, 1401, 1454]
+    - [0, 44, 61, 87, 199, 384, 479, 524, 627, 643, 739, 825, 934, 980, 1006]
+    - [0, 60, 103, 199, 267, 507, 538, 638, 728, 812, 869, 1025, 1056, 1148, 1232]
+    - [301, 302, 410, 617, 620, 831, 846, 868, 983, 1002, 1089, 1144, 1219, 1354,
+      1364]
+    - [98, 169, 172, 243, 277, 338, 868, 902, 1002, 1230, 1266, 1354, 1355, 1358,
+      1456]
+    - [67, 151, 302, 376, 392, 478, 566, 611, 633, 655, 809, 825, 833, 980, 1050]
+    - [3, 169, 191, 264, 287, 301, 338, 392, 620, 651, 737, 784, 897, 1098, 1179]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [191, 202, 209, 279, 298, 376, 472, 643, 784, 860, 1026, 1127, 1293, 1332, 1365]
+    - [0, 29, 89, 297, 354, 433, 537, 616, 638, 665, 685, 983, 1074, 1153, 1316]
+    util: [2200, 2258, 2096, 2104, 2679]
+  status: SATISFIED
+  time: 43.609
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11326
+    disp: 458
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, 1035, null, null, 785, 982, 997, 1236, 748, 1175, 1357,
+      null, 1038, 1193, 1220, 1483, 1517, 1410, null, null, 1442, 1361]
+    max_done: 1517
+    obj: 458
+    objective: 458
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 61, 167, 234, 332, 387, 429, 507, 573, 597, 709, 768, 899, 937, 976]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 2, 22, 71, 103, 152, 230, 317, 396, 422, 500, 533, 553, 637, 718]
+    - [0, 12, 57, 138, 301, 342, 429, 486, 554, 633, 736, 760, 843, 906, 931]
+    - [0, 44, 87, 167, 243, 332, 335, 390, 449, 499, 576, 689, 751, 821, 906]
+    - [41, 152, 165, 279, 313, 396, 419, 507, 648, 685, 745, 918, 976, 1057, 1141]
+    - [0, 117, 164, 217, 255, 266, 299, 390, 448, 502, 540, 639, 657, 713, 741]
+    - [2, 84, 164, 335, 399, 410, 494, 558, 639, 707, 834, 906, 976, 1008, 1089]
+    - [137, 230, 419, 576, 675, 685, 791, 815, 906, 997, 1035, 1085, 1138, 1236, 1295]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 61, 87, 199, 384, 488, 533, 604, 620, 716, 802, 959, 1005, 1031]
+    - [0, 60, 103, 199, 296, 425, 479, 558, 707, 791, 839, 918, 937, 1085, 1167]
+    - [342, 387, 449, 566, 569, 637, 691, 751, 822, 889, 1057, 1112, 1124, 1174, 1184]
+    - [98, 169, 172, 243, 277, 337, 675, 1014, 1047, 1167, 1203, 1291, 1292, 1295,
+      1393]
+    - [12, 138, 343, 821, 837, 1047, 1079, 1081, 1103, 1203, 1276, 1292, 1300, 1364,
+      1434]
+    - [3, 169, 191, 264, 266, 276, 313, 359, 448, 815, 1005, 1052, 1137, 1291, 1372]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [191, 202, 209, 279, 298, 417, 469, 597, 636, 698, 1079, 1174, 1295, 1334, 1367]
+    - [0, 29, 89, 160, 217, 440, 507, 714, 741, 768, 842, 847, 932, 1011, 1276]
+    util: [2200, 2258, 2096, 2104, 2668]
+  status: SATISFIED
+  time: 46.782
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11395
+    disp: 451
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, 854, null, 1000, 921, null, 1159, 1269, 1209, 1090,
+      1485, null, 1023, 1263, 1370, 1603, 1637, 1539, null, 1507, null, 1498]
+    max_done: 1637
+    obj: 451
+    objective: 451
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 61, 129, 176, 328, 383, 392, 421, 456, 480, 608, 659, 725, 763, 795]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 41, 136, 198, 206, 265, 328, 415, 572, 618, 661, 769, 879, 888, 921]
+    - [0, 2, 22, 71, 114, 163, 232, 303, 382, 415, 514, 553, 573, 724, 854]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 176, 275, 382, 456, 459, 514, 546, 659, 797, 857, 919, 1000, 1068]
+    - [136, 274, 308, 381, 432, 480, 503, 594, 725, 762, 795, 898, 980, 1090, 1174]
+    - [0, 117, 164, 206, 381, 392, 499, 618, 736, 787, 830, 1004, 1022, 1174, 1202]
+    - [2, 84, 164, 287, 336, 347, 438, 548, 591, 672, 725, 821, 891, 923, 1004]
+    - [303, 425, 503, 509, 661, 762, 929, 953, 1037, 1159, 1237, 1287, 1340, 1364,
+      1423]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 256, 282, 355, 389, 427, 547, 657, 673, 782, 868, 915, 990, 1016]
+    - [0, 60, 103, 199, 277, 509, 556, 635, 746, 830, 912, 1022, 1037, 1155, 1237]
+    - [396, 459, 573, 635, 638, 657, 857, 919, 995, 1068, 1155, 1210, 1222, 1272,
+      1334]
+    - [98, 169, 180, 241, 421, 481, 787, 893, 926, 1287, 1323, 1411, 1412, 1415, 1513]
+    - [0, 84, 397, 471, 638, 724, 756, 953, 975, 1323, 1396, 1412, 1420, 1484, 1554]
+    - [3, 169, 336, 383, 385, 395, 472, 891, 980, 1011, 1202, 1249, 1334, 1420, 1501]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 45, 134, 164, 223, 471, 546, 575, 1061, 1111, 1204, 1227, 1325, 1396, 1420]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [25, 54, 114, 141, 198, 524, 591, 791, 888, 915, 975, 1111, 1154, 1233, 1413]
+    util: [2291, 2258, 2096, 2104, 2646]
+  status: SATISFIED
+  time: 55.667
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11498
+    disp: 416
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, 1070, 1165, null, 943, null, 1102, 1255, 964, null,
+      1389, null, 1035, 1228, 1170, 1581, 1552, 1339, null, 1422, 1295, 1413]
+    max_done: 1581
+    obj: 416
+    objective: 416
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 61, 179, 252, 359, 432, 435, 476, 548, 635, 773, 862, 928, 966, 1011]
+    - [0, 45, 99, 176, 267, 325, 414, 509, 620, 737, 832, 876, 957, 966, 1067]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 2, 22, 71, 114, 219, 305, 388, 467, 492, 572, 605, 653, 737, 876]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 99, 179, 255, 350, 355, 410, 483, 509, 586, 727, 789, 943, 1011]
+    - [41, 163, 176, 265, 336, 365, 388, 492, 570, 607, 783, 939, 989, 1076, 1160]
+    - [0, 117, 164, 198, 249, 264, 297, 346, 359, 421, 602, 710, 794, 928, 957]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [137, 230, 329, 410, 509, 607, 701, 725, 809, 881, 1070, 1120, 1173, 1255, 1327]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 226, 252, 325, 359, 397, 442, 572, 657, 753, 839, 956, 1002, 1028]
+    - [0, 59, 103, 199, 277, 335, 435, 636, 747, 835, 953, 1032, 1054, 1120, 1202]
+    - [230, 297, 447, 514, 517, 524, 539, 564, 726, 745, 832, 887, 899, 1044, 1134]
+    - [84, 155, 158, 255, 289, 349, 586, 620, 745, 1202, 1301, 1389, 1390, 1393, 1491]
+    - [0, 84, 231, 305, 346, 432, 503, 725, 883, 1238, 1311, 1327, 1335, 1399, 1469]
+    - [2, 155, 209, 505, 507, 517, 554, 684, 797, 831, 1002, 1049, 1134, 1220, 1301]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 252, 467, 513, 572, 657, 814, 869, 939, 989, 1102, 1125, 1223, 1311, 1335]
+    - [177, 188, 195, 265, 284, 376, 507, 601, 646, 701, 898, 975, 1067, 1106, 1220]
+    - [25, 54, 114, 141, 198, 399, 482, 843, 1049, 1096, 1116, 1121, 1164, 1243, 1328]
+    util: [2200, 2258, 2096, 2298, 2646]
+  status: SATISFIED
+  time: 75.089
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11395
+    disp: 408
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, 1026, 1225, null, 836, null, 1185, 1156, 923, 913, 1342,
+      null, 856, 1325, 1221, null, 1488, 1390, null, 1488, 1169, 1384]
+    max_done: 1488
+    obj: 408
+    objective: 408
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 61, 179, 258, 364, 419, 422, 526, 564, 598, 747, 822, 888, 926, 967]
+    - [0, 45, 99, 176, 267, 325, 419, 559, 683, 807, 923, 967, 1048, 1049, 1127]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 2, 22, 71, 114, 163, 230, 329, 408, 446, 572, 605, 625, 709, 769]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 99, 179, 255, 356, 359, 414, 488, 536, 661, 761, 823, 1026, 1094]
+    - [41, 163, 176, 249, 336, 408, 438, 526, 599, 636, 709, 807, 887, 969, 1061]
+    - [0, 117, 164, 198, 249, 264, 297, 346, 359, 410, 652, 827, 845, 888, 916]
+    - [2, 84, 164, 209, 265, 276, 354, 362, 370, 438, 476, 613, 683, 746, 827]
+    - [137, 230, 431, 437, 557, 570, 751, 775, 916, 969, 1094, 1144, 1197, 1221, 1280]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 226, 252, 325, 359, 397, 442, 548, 564, 660, 746, 776, 823, 849]
+    - [0, 60, 103, 199, 277, 437, 512, 636, 775, 886, 997, 1076, 1127, 1217, 1299]
+    - [301, 302, 364, 409, 440, 476, 548, 690, 761, 836, 968, 1023, 1035, 1169, 1185]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 84, 302, 410, 426, 520, 604, 859, 934, 1144, 1225, 1241, 1271, 1335, 1405]
+    - [3, 98, 397, 508, 510, 520, 557, 798, 887, 918, 1053, 1100, 1185, 1271, 1352]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 252, 467, 513, 660, 845, 898, 927, 1023, 1073, 1185, 1208, 1306, 1384, 1401]
+    - [120, 131, 138, 208, 227, 376, 510, 604, 606, 661, 853, 930, 1022, 1061, 1094]
+    - [25, 54, 114, 141, 198, 399, 482, 548, 570, 605, 881, 1073, 1116, 1195, 1299]
+    util: [2200, 2258, 2096, 2195, 2646]
+  status: SATISFIED
+  time: 76.012
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11447
+    disp: 404
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, 1035, 1190, null, 1102, null, 1087, 1127, 681, 1250,
+      1386, null, 1173, 1296, 1156, 1438, 1672, null, null, 1447, 1274, 1445]
+    max_done: 1672
+    obj: 404
+    objective: 404
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 61, 179, 254, 359, 466, 469, 561, 594, 631, 751, 810, 876, 914, 976]
+    - [0, 45, 99, 172, 225, 277, 414, 594, 687, 751, 864, 908, 989, 990, 1092]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 2, 22, 157, 205, 312, 372, 470, 606, 680, 758, 791, 835, 919, 1035]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 99, 179, 255, 352, 355, 410, 483, 509, 586, 723, 785, 908, 996]
+    - [41, 137, 150, 258, 336, 351, 374, 462, 553, 590, 653, 753, 802, 948, 1032]
+    - [0, 117, 164, 198, 236, 264, 297, 346, 359, 410, 462, 561, 579, 646, 674]
+    - [2, 84, 164, 355, 410, 421, 512, 551, 687, 797, 876, 981, 1051, 1083, 1164]
+    - [137, 230, 329, 410, 520, 524, 755, 791, 1032, 1087, 1138, 1188, 1241, 1265,
+      1324]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 226, 252, 325, 404, 499, 544, 618, 634, 730, 816, 1085, 1131, 1166]
+    - [0, 45, 61, 157, 352, 440, 472, 590, 779, 903, 951, 1030, 1068, 1188, 1270]
+    - [230, 297, 359, 469, 472, 498, 513, 535, 758, 777, 883, 938, 950, 1110, 1120]
+    - [98, 248, 251, 346, 380, 440, 586, 620, 777, 1102, 1138, 1226, 1227, 1250, 1348]
+    - [0, 84, 231, 305, 380, 466, 503, 863, 951, 1270, 1386, 1447, 1455, 1519, 1589]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 252, 336, 421, 498, 583, 846, 875, 1051, 1101, 1194, 1217, 1315, 1343, 1360]
+    - [169, 181, 188, 329, 620, 636, 659, 753, 755, 810, 919, 1000, 1127, 1166, 1199]
+    - [25, 54, 114, 141, 198, 305, 374, 442, 464, 491, 885, 938, 1030, 1109, 1360]
+    util: [2200, 2258, 2096, 2247, 2646]
+  status: SATISFIED
+  time: 76.128
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11394
+    disp: 243
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, 971, 1047, 1083, null, null, 1003, 1499, 1172, null,
+      1466, 1221, null, 1244, null, 1080, 1582, 1370, 1578, 1520, 1326, null]
+    max_done: 1582
+    obj: 243
+    objective: 243
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 57, 179, 248, 368, 423, 438, 467, 515, 539, 686, 766, 832, 870, 912]
+    - [0, 45, 99, 172, 237, 285, 423, 500, 622, 686, 732, 776, 857, 870, 949]
+    - [0, 41, 151, 238, 246, 305, 368, 505, 631, 653, 765, 850, 949, 980, 1004]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 41, 99, 179, 320, 394, 415, 470, 525, 545, 622, 711, 774, 844, 912]
+    - [136, 346, 365, 470, 486, 492, 593, 773, 845, 971, 1080, 1178, 1192, 1273, 1404]
+    - [0, 113, 160, 246, 294, 492, 589, 638, 737, 788, 850, 949, 991, 1069, 1165]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [232, 545, 629, 788, 887, 891, 949, 990, 1097, 1178, 1218, 1268, 1321, 1345,
+      1404]
+    - [0, 74, 149, 238, 320, 399, 579, 653, 711, 774, 778, 887, 920, 1083, 1147]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 57, 73, 169, 237, 394, 426, 505, 681, 765, 813, 892, 948, 1136, 1218]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [84, 155, 158, 255, 305, 365, 482, 516, 595, 664, 700, 813, 814, 892, 990]
+    - [67, 151, 325, 516, 638, 732, 782, 973, 1032, 1268, 1341, 1357, 1365, 1429,
+      1499]
+    - [0, 155, 205, 248, 284, 310, 347, 393, 724, 995, 1022, 1080, 1165, 1251, 1332]
+    - [177, 216, 230, 294, 381, 481, 514, 551, 682, 766, 814, 990, 1341, 1499, 1569]
+    - [0, 226, 424, 486, 545, 630, 683, 712, 887, 1054, 1195, 1218, 1357, 1416, 1433]
+    - [216, 227, 234, 381, 532, 545, 614, 708, 832, 887, 1003, 1080, 1172, 1211, 1251]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    util: [2339, 2258, 2096, 2298, 2403]
+  status: SATISFIED
+  time: 90.469
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11346
+    disp: 230
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, 1057, 1325, 1136, null, null, 1295, 1667, 808, null,
+      1485, 1438, 1086, 1448, null, 1067, 1736, 1443, 1033, 1678, null, null]
+    max_done: 1736
+    obj: 230
+    objective: 230
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 61, 179, 248, 401, 501, 504, 600, 635, 672, 790, 841, 907, 968, 998]
+    - [0, 45, 99, 172, 237, 285, 456, 633, 841, 905, 954, 1067, 1148, 1149, 1227]
+    - [0, 41, 151, 241, 249, 338, 401, 504, 588, 610, 726, 882, 981, 990, 1057]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 99, 179, 323, 434, 437, 492, 525, 614, 713, 773, 981, 1136, 1204]
+    - [136, 346, 365, 492, 508, 514, 811, 899, 971, 1204, 1295, 1393, 1407, 1488,
+      1572]
+    - [0, 117, 164, 249, 294, 305, 338, 415, 424, 475, 501, 600, 618, 773, 801]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [232, 545, 629, 691, 790, 805, 899, 945, 1053, 1106, 1237, 1287, 1340, 1364,
+      1423]
+    - [0, 77, 152, 241, 323, 399, 579, 614, 723, 786, 790, 907, 915, 1287, 1364]
+    - [0, 44, 226, 287, 362, 396, 434, 508, 659, 786, 882, 977, 1007, 1053, 1079]
+    - [0, 57, 73, 169, 237, 397, 588, 667, 923, 1007, 1077, 1156, 1227, 1340, 1422]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [84, 155, 158, 255, 305, 365, 475, 533, 566, 635, 671, 786, 787, 879, 977]
+    - [67, 151, 325, 399, 415, 501, 614, 1007, 1055, 1422, 1495, 1511, 1519, 1583,
+      1653]
+    - [0, 155, 205, 248, 360, 437, 479, 525, 667, 1029, 1106, 1153, 1238, 1324, 1405]
+    - [177, 216, 230, 294, 381, 481, 514, 551, 629, 713, 740, 786, 879, 954, 1024]
+    - [0, 252, 427, 579, 638, 723, 776, 1007, 1077, 1127, 1393, 1416, 1572, 1574,
+      1591]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    util: [2291, 2258, 2096, 2298, 2403]
+  status: SATISFIED
+  time: 90.698
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11335
+    disp: 223
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, 1003, 1305, 944, null, 1156, 1219, 1629, 682, null,
+      1396, null, 939, 1343, null, 1660, 1649, 1418, 1543, 1568, null, null]
+    max_done: 1660
+    obj: 223
+    objective: 223
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 61, 179, 248, 346, 460, 469, 535, 599, 623, 728, 779, 845, 883, 944]
+    - [0, 45, 99, 172, 237, 285, 401, 568, 779, 843, 1003, 1047, 1128, 1129, 1207]
+    - [0, 41, 136, 164, 172, 263, 326, 463, 547, 600, 661, 746, 845, 854, 865]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 12, 57, 172, 232, 309, 396, 453, 521, 600, 725, 843, 904, 991, 1105]
+    - [0, 44, 99, 201, 277, 359, 362, 417, 470, 510, 587, 715, 845, 1047, 1128]
+    - [136, 346, 396, 510, 643, 649, 746, 834, 906, 1115, 1219, 1317, 1331, 1412,
+      1534]
+    - [0, 117, 164, 181, 219, 230, 277, 326, 359, 410, 436, 535, 553, 647, 675]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [273, 490, 623, 629, 728, 741, 834, 883, 967, 1020, 1148, 1198, 1251, 1275,
+      1334]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 44, 226, 252, 325, 362, 421, 526, 629, 645, 741, 827, 857, 906, 932]
+    - [0, 57, 73, 169, 237, 351, 381, 460, 858, 942, 990, 1069, 1083, 1198, 1317]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [84, 155, 158, 326, 498, 649, 904, 967, 1000, 1280, 1380, 1468, 1469, 1472,
+      1570]
+    - [12, 138, 366, 587, 603, 689, 721, 942, 990, 1316, 1396, 1412, 1420, 1496, 1566]
+    - [0, 155, 205, 326, 328, 338, 375, 421, 547, 964, 1020, 1128, 1213, 1299, 1380]
+    - [177, 231, 245, 309, 417, 451, 484, 521, 675, 759, 786, 857, 1389, 1464, 1534]
+    - [0, 252, 381, 451, 558, 643, 696, 725, 938, 1012, 1105, 1128, 1226, 1464, 1481]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    util: [2291, 2258, 2096, 2298, 2392]
+  status: SATISFIED
+  time: 100.695
+- configuration: Gecode_BB
+  data_file: new_dzn/mindis_ta59_5a_alloc2.dzn
+  model: jobshop_gini.mzn
+  problem: .
+  solution:
+    UTIL: 11321
+    disp: 204
+    done: [null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, 1064, 840, 1152, 1175, null, 1109, null, 1254, 1194, null,
+      1375, 1047, 1108, 1283, null, 1409, 1622, 1524, null, null, null, 1415]
+    max_done: 1622
+    obj: 204
+    objective: 204
+    start:
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 12, 163, 262, 325, 377, 437, 542, 615, 641, 666, 769, 781, 899, 991]
+    - [0, 61, 125, 172, 270, 325, 331, 377, 410, 458, 564, 615, 718, 756, 781]
+    - [0, 45, 99, 270, 303, 326, 455, 524, 641, 705, 840, 884, 965, 976, 1054]
+    - [0, 108, 258, 325, 333, 392, 455, 542, 680, 702, 783, 868, 967, 1047, 1096]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 12, 57, 172, 203, 244, 401, 458, 529, 608, 736, 755, 882, 996, 1058]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [12, 108, 121, 286, 302, 344, 410, 550, 699, 736, 784, 910, 956, 1075, 1159]
+    - [0, 117, 164, 333, 420, 524, 626, 756, 816, 867, 897, 996, 1109, 1159, 1187]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [244, 337, 397, 431, 608, 752, 868, 892, 976, 1029, 1046, 1101, 1172, 1254,
+      1313]
+    - [12, 79, 173, 262, 392, 478, 560, 622, 680, 745, 749, 830, 872, 920, 973]
+    - [0, 44, 99, 371, 530, 564, 602, 647, 751, 767, 863, 949, 1029, 1075, 1101]
+    - [0, 57, 73, 169, 256, 367, 397, 609, 699, 783, 831, 949, 1054, 1175, 1257]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [84, 155, 158, 219, 360, 420, 705, 751, 803, 884, 1096, 1196, 1197, 1200, 1319]
+    - [79, 163, 337, 739, 813, 945, 979, 1021, 1150, 1257, 1375, 1391, 1405, 1469,
+      1539]
+    - [0, 155, 303, 371, 444, 492, 529, 867, 991, 1043, 1187, 1234, 1319, 1405, 1486]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [null, null, null, null, null, null, null, null, null, null, null, null, null,
+      null, null]
+    - [0, 29, 89, 116, 177, 411, 478, 781, 803, 830, 892, 1037, 1080, 1159, 1330]
+    util: [2359, 2258, 2096, 2298, 2310]
+  status: SATISFIED
+  time: 388.963
+- {configuration: Gecode_BB, data_file: new_dzn/mindis_ta59_5a_alloc2.dzn, model: jobshop_gini.mzn,
+  problem: ., status: SATISFIED}
