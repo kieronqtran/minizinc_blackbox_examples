@@ -4,7 +4,7 @@ include "model__STUB_BASE_regular.mzn";
 array[int,int] of int: nShift_WS_DATA_2D;
 array[int,int] of int: nScore_DATA_2D;
 
-      
+                    
 %%%%%%%%%%%%% LNS
 include "restart.mzn";
 include "globals.mzn";
@@ -12,8 +12,8 @@ include "globals.mzn";
 int: nDiff;
 set of int: testWNURSES;
 set of int: randNURSES;
-NURSES: nurID1;
-DAYS: d1; 
+ NURSES: nurID1;
+ DAYS: d1; 
 int: fObjMinimiseSum;
 int: SwitchNeighborhood;
 int: Iteration;
@@ -23,9 +23,18 @@ int: prevObj;
 int: objDiff=0;
 set of int: WNURSES = { n | n in index_set_1of2(nScore_DATA_2D), d in index_set_2of2(nScore_DATA_2D) where nScore_DATA_2D[n,d] >= prevObj-objDiff};
 set of int: WDAYS = { d | n in index_set_1of2(nScore_DATA_2D), d in index_set_2of2(nScore_DATA_2D) where nScore_DATA_2D[n,d] >= prevObj-objDiff};
-;
 
+
+% The user-defined LNS strategy
+constraint status() == START ->  forall(n in NURSES, d in DAYS 
+                                          where n <= card(index_set_1of2(nShift_WS_DATA_2D)) 
+                                                          /\ not ( n in {nurID1} /* /\ d in {d1-3,d2-2,d1-1,d1}  /\ fAvoidPattern==1 */ ) 
+                                                          )
+                                       ( nShift[n,d] = nShift_WS_DATA_2D[n,d] );
 constraint 
+
+
+
 %if fLNS==1 then true %If no prev sol, relax all, else use LNS
 %else
   forall( n in NURSES, d in DAYS where
@@ -82,12 +91,7 @@ constraint obj = if (fObjMinimiseSum==1) then sum(n in NURSES)( max(d in DAYS)(s
 
 
 
-% The user-defined LNS strategy
-predicate my_lns() =  forall(n in NURSES, d in DAYS 
-                                          where n <= card(index_set_1of2(nShift_WS_DATA_2D)) 
-                                                          /\ not ( n in {nurID1} /* /\ d in {d1-3,d2-2,d1-1,d1}  /\ fAvoidPattern==1 */ ) 
-                                                          )
-                                       ( nShift[n,d] = nShift_WS_DATA_2D[n,d] );
+
 
 solve 
 %::on_restart("my_lns")

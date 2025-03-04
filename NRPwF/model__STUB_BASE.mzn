@@ -1,5 +1,4 @@
 
-
 /*
  * An automatic MiniZinc model
  */
@@ -17,8 +16,6 @@ int: nEvalHorizon = 10;
 %int: FatigueConstr;
 int: nNurses;
 int: nDays;
-
-% NATHAN: Why 431013 for all?
 array[int] of int: nFatigueParams__DATA_1D = [431013|i in ALLPATTERNS];
 array[int] of int: nWeekdayOf_input = [1, 2, 3, 4, 5, 6, 7,1,2,3, 4, 5, 6, 7,1,2,3, 4, 5, 6, 7,1, 2, 3, 4, 5, 6, 7,1,2,3,    4, 5, 6, 7,1,  2,3, 4, 5, 6, 7];
 array[int] of int: nWeekdayOf = [ nWeekdayOf_input[i] | i in 1..nDays ];
@@ -135,24 +132,27 @@ constraint forall( n in NURSES )(
 %%%%%%%%%%%% Regulatory Constraints %%%%%%%%%%%%%%  ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 %% Number of successive night shifts is no more than 3
-constraint forall( n in NURSES, d in DAYS where d <= max(DAYS)-3 )(      
-                   sum( d1 in d..d+3 )( is_night( n, d1 ) ) <= 3 );
+constraint if extShiftWork==1 then forall( n in NURSES, d in DAYS where d <= max(DAYS)-3 )(      
+                   sum( d1 in d..d+3 )( is_night( n, d1 ) ) <= 3 )
+           else true endif;
                    
 %% No more than 50 hours of work in a week, starting from 1 to 7
-constraint forall( n in NURSES, d in 0..(max(DAYS)-1) div 7 )(
-                let {int: kd = (7*d)+1} in       
-                   sum( d1 in kd..kd+6 )( nShiftWorkDuration[nShift[n,d1]] ) <= 50*10);
+constraint if extShiftWork==1 then forall( n in NURSES, d in 0..(max(DAYS)-1) div 7 )(
+let {int: kd = (7*d)+1} in       
+                   sum( d1 in kd..kd+6 )( nShiftWorkDuration[nShift[n,d1]] ) <= 50*10)
+           else true endif;
                 
 
 %% Weekend OFF: Within a 3-week period atleast one weekend is off 
 %% and corresponding week's Friday's shift cannot be a night shift but the Sunday can be a night shift
-constraint forall( n in NURSES, kd in 0..(max(DAYS) div 7 - 3) )(       %% no 3 weekends working (already 1 day/we enough)  TODO
+constraint if extShiftWork==1 then forall( n in NURSES, kd in 0..(max(DAYS) div 7 - 3) )(       %% no 3 weekends working (already 1 day/we enough)  TODO
     let {
       int: dSat1 = 7*kd+6,
     } in
     ( is_working_some_of( n, dSat1, dSat1+1 ) /\ is_working_some_of( n, dSat1+7, dSat1+8 ) /\
         is_working_some_of( n, dSat1+14, dSat1+15 ) )
-);
+)
+           else true endif;
 
 %% Forward rotations of shifts
 constraint if extShiftWork==1 then forall( n in NURSES, d in DAYS where d <= max(DAYS)-1 )(

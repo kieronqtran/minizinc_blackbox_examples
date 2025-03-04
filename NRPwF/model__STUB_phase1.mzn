@@ -9,7 +9,7 @@ include "model__STUB_scoring.mzn";
                     
                     
 %%%%%%%%%%%%% LNS
-% include "restart.mzn";
+include "restart.mzn";
 include "globals.mzn";
 % The user-defined LNS strategy
 constraint status() == START -> let {

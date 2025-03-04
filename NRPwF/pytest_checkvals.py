@@ -16,7 +16,7 @@ def write_1d_array_to_file(file, mode, array_1d):
     for i in array_1d:
         f.write(str(i)+',')
     f.close()
- 
+    
 def write_2d_array_to_file(caption, file, mode, array_2d, printMax, BioTypes):
     f = open(file, mode)
     f.write('\n' + caption + '\n')
@@ -220,12 +220,12 @@ for nBioInstance in nBioInstances:#Find the nurse's biotype (depends on instance
     # Load score-free rostering model from file
     rosterinit = Model("./model__STUB_initialSol.mzn")
     # Find the MiniZinc solver configuration for Gurobi
-    solver = Solver.lookup("gurobi")
-    # solver = Solver.lookup("gecode")
-    # solver = Solver.lookup("chuffed")
+    # gurobi = Solver.lookup("gurobi")
+    gurobi = Solver.lookup("gecode")
     # Create an Instance of the roster model for Gurobi
-    instance = Instance(solver, rosterinit)
+    instance = Instance(gurobi, rosterinit)
     # Assign inputs
+    
     #instance["FatigueConstr"] = FatigueConstr
     instance["nNurses"] = nNurses
     instance["nDays"] = nDays
@@ -236,7 +236,6 @@ for nBioInstance in nBioInstances:#Find the nurse's biotype (depends on instance
     instance["applyMinWorkTime"] = applyMinWorkTime
     # Bio Types
     instance["nNurseBioType"] = nNurseBioType
-    print(instance._data)
     result = instance.solve()                                   #INITIAL SOLUTION FOUND HERE: BASE MODEL + "./model__STUB_initialSol.mzn"
 
     print(result.status)
@@ -327,7 +326,7 @@ for nBioInstance in nBioInstances:#Find the nurse's biotype (depends on instance
                     print('--------------------------Objective: avg. individual minmax--------------------------')
                     print('Runtime per LNS iteration: ',LNSminutes,' mins', LNSseconds, 'secs')
                 fObjMinimiseSum=1
-
+                 
                 extShiftWork = extShiftWork_LNS_Mid
                 LNSminutes=LNSminutes_Mid#Set runtime for new neighbourhood
                 LNSseconds=LNSseconds_Mid
@@ -342,7 +341,7 @@ for nBioInstance in nBioInstances:#Find the nurse's biotype (depends on instance
 
             instimp["fObjMinimiseSum"]=fObjMinimiseSum
             instimp["Iteration"]=iter
-
+            
             f.write('\nRuntime: ' + str(LNSminutes) + ' mins' + str(LNSseconds) + 'secs')
             #f.close()
             #sys.stdout.flush()
@@ -783,3 +782,5 @@ for nBioInstance in nBioInstances:#Find the nurse's biotype (depends on instance
         f = open(fileID+"solution.txt", "a")
         f.write('\n Time: ' + str(end - start) + '\n============\n\n')
         f.close()
+
+    

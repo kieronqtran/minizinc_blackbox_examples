@@ -137,6 +137,10 @@ elseif(ModelType==2)
     end
 end
     
+    
+    
+    
+    
 if(ModelType==1)
     save('NewDvData1109.mat','DvData','xData','RosterData','ev_hor','RosterLength', '-v7.3');
 end
