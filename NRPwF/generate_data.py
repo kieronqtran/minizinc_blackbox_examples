@@ -220,7 +220,7 @@ for nBioInstance in nBioInstances:#Find the nurse's biotype (depends on instance
     f.write('===Parameters: ' + outputString + '===\n')
 
     # Load score-free rostering model from file
-    rosterinit = Model("./model__STUB_phase2.mzn")
+    rosterinit = Model("./model__STUB_BASE.mzn")
     # Find the MiniZinc solver configuration for Gurobi
     # solver = Solver.lookup("gurobi")
     solver = Solver.lookup("gecode")

@@ -86,7 +86,8 @@ fPostProcess = 0
 #nNursesInit = [30] # example - [30,27]
 nDays=42
 # Bio instance
-nBioInstances = range(17,20)#[2,3,4,5,6,7,8,9,10,11,12,13,14] # example - range(3) or [0, 1, 2, 3]
+# nBioInstances = range(17,20)#[2,3,4,5,6,7,8,9,10,11,12,13,14] # example - range(3) or [0, 1, 2, 3]
+nBioInstances = [17]
 # Set bio types of nurses
 NurseBioAll = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 4, 4, 7, 7, 7] ,
                 [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 3, 3, 4, 4, 4, 4, 4, 7, 7, 7, 7, 7] ,
@@ -220,8 +221,8 @@ for nBioInstance in nBioInstances:#Find the nurse's biotype (depends on instance
     # Load score-free rostering model from file
     rosterinit = Model("./model__STUB_initialSol.mzn")
     # Find the MiniZinc solver configuration for Gurobi
-    # gurobi = Solver.lookup("gurobi")
-    gurobi = Solver.lookup("gecode")
+    gurobi = Solver.lookup("gurobi")
+    # gurobi = Solver.lookup("gecode")
     # Create an Instance of the roster model for Gurobi
     instance = Instance(gurobi, rosterinit)
     # Assign inputs
@@ -257,8 +258,8 @@ for nBioInstance in nBioInstances:#Find the nurse's biotype (depends on instance
     ListOfApproxScores=[[[0]*nDays]*nNurses]
     
     if result.status.has_solution():                            #PHASE 2: BASE MODEL + "./model__STUB_phase2.mzn"
-        stats = result.stats
-        stats['status'] = str(result.status)
+        stats = result.status
+        # stats['status'] = str(result.status)
         print('Initial solution found obj approx. ', result.objective,'.\nStarting phase 2......')
 
         # Inputs and Model Extensions
@@ -442,7 +443,7 @@ for nBioInstance in nBioInstances:#Find the nurse's biotype (depends on instance
             if len(testWNURSES) > 5:
                 SwitchNeighborhood=1
                 saveset=testWNURSES
-                testWNURSES=set(random.sample(testWNURSES,5))
+                testWNURSES=set(random.sample(sorted(testWNURSES),5))
             else:
                 SwitchNeighborhood=0
             #    testWNURSES.add(random.sample(testWNURSES,5))
@@ -544,7 +545,7 @@ for nBioInstance in nBioInstances:#Find the nurse's biotype (depends on instance
                 _,Dv,_,_,_,_,_ = eng.evalnumberedpattern(Sols[n],0,9999,9999,9999,9999,9999,0,NurseBioAll[nBioInstance][n],nargout=7)
                 Dv=np.array(Dv._data)*100 #Conversion to list, get integer values like in minizinc
                 Dv=Dv[0:2400*nDays] #Ignore last time increment to get 2400 each day
-                Dv=Dv.reshape(-1,2400) #Reshape to facilitate getting daily max
+                # Dv=Dv.reshape(-1,2400) #Reshape to facilitate getting daily max
                 Dv=np.max(Dv,axis=1) #Get daily max values
                 SolsDv[n,:]=Dv #Store in SolsDv
                 SolsDvMax[n]=np.max(Dv) #Individual maximum fatigue values, store in SolsDvMax

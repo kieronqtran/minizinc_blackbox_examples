@@ -1,3 +1,4 @@
+include "global_cardinality_low_up.mzn";
 /*
  * An automatic MiniZinc model
  */
@@ -181,6 +182,4 @@ int: nConsecWorkOFF = 10;
 constraint if extShiftWork==1 then forall( n in NURSES, d in DAYS where d <= max(DAYS)-nConsecWorkOFF -2)(
                    if sum( d1 in d..d+nConsecWorkOFF-1 )( is_idle( n, d1 ) /\ is_idle( n, d1+1 ) ) ==  0 then ( is_idle( n, d+nConsecWorkOFF+1 ) /\ is_idle(n,d+nConsecWorkOFF+2) ) else true endif )
            else true endif;
-
-
 

@@ -1,5 +1,6 @@
-include "model__STUB_scoring.mzn";
+% include "model__STUB_scoring.mzn";
 include "global_cardinality_low_up.mzn";
+include "experimental/blackbox.mzn";
 
 /*
  * An automatic MiniZinc model
@@ -9,8 +10,8 @@ include "global_cardinality_low_up.mzn";
  array[int] of int: nCovAll = [6,6,3];
  
 %%%%%% Change data: start %%%%%%
- int: nBioTypes = 9;
- int: nPatternLength = 4; % MAKE SURE TO CHANGE THE INDEX OF THE SCORING CONSTRAINT ACCORDINGLY
+int: nBioTypes = 9;
+int: nPatternLength = 4; % MAKE SURE TO CHANGE THE INDEX OF THE SCORING CONSTRAINT ACCORDINGLY
 array[int] of BIOTYPES: nNurseBioType;
 % array[int] of int: nShift_WS_DATA;
 %%%%%% Change data: end %%%%%%
@@ -77,6 +78,94 @@ array [NURSES, DAYS] of var SHIFTS union NON_SHIFTS: nShift;% = array2d( NURSES,
 % %      endif
 %     | n in NURSES, d in DAYS ] );
 
+
+
+%%%%%%%%%%%% Roster Score %%%%%%%%%%%%%%  ++++++++++++++++++++++++++++++++++++++++++++++++++++
+enum CASES = {
+  Tabular,
+  BlackBox
+};
+
+CASES: Case;
+
+int: maxFatigue = max([max(nShiftScore__DATA_1D),max(nShiftScoreAfterNight__DATA_1D)]); % f^{Max}
+int: minFatigue = min([min(nShiftScore__DATA_1D),min(nShiftScoreAfterNight__DATA_1D)]);
+array[NURSES, DAYS] of var minFatigue..maxFatigue: score;
+
+% constraint forall( n in NURSES, d in DAYS)(
+%                     score[ n, d] ==    (if d==1 then 
+%                                                 nShiftScore__DATA_1D[(pow(4,nPatternLength)*(nNurseBioType[n]-1) + (   
+%                                                   1+nShift[n,d]*pow(nPatternLength,3))  ) ]
+%                                         elseif d==2 then
+%                                                 nShiftScore__DATA_1D[(pow(4,nPatternLength)*(nNurseBioType[n]-1) + (   
+%                                                   (1) + 
+%                                                    nShift[n,d-1]*pow(nPatternLength,2)+ 
+%                                                    nShift[n,d]*pow(nPatternLength,3)) 
+%                                                    ) ]
+%                                         elseif d==3 then
+%                                                 nShiftScore__DATA_1D[(pow(4,nPatternLength)*(nNurseBioType[n]-1) + (   
+%                                                   (1) + 
+%                                                    nShift[n,d-2]*nPatternLength + 
+%                                                    nShift[n,d-1]*pow(nPatternLength,2)+ 
+%                                                    nShift[n,d]*pow(nPatternLength,3)) 
+%                                                    ) ]   
+%                                         else           
+%                                             if d > 4 /\ nShift[n,d-4]==3 then
+%                                                   nShiftScoreAfterNight__DATA_1D[(pow(4,nPatternLength)*(nNurseBioType[n]-1) + (   
+%                                                   (nShift[n,d-3]+1) + 
+%                                                    nShift[n,d-2]*nPatternLength + 
+%                                                    nShift[n,d-1]*pow(nPatternLength,2)+ 
+%                                                    nShift[n,d]*pow(nPatternLength,3)) 
+%                                                    ) ]
+%                                             else                                             
+%                                                   nShiftScore__DATA_1D[(pow(4,nPatternLength)*(nNurseBioType[n]-1) + (   
+%                                                   (nShift[n,d-3]+1) + 
+%                                                    nShift[n,d-2]*nPatternLength + 
+%                                                    nShift[n,d-1]*pow(nPatternLength,2)+ 
+%                                                    nShift[n,d]*pow(nPatternLength,3)) 
+%                                                    ) ]
+%                                             endif
+%                                          endif)
+%                     ) ;
+
+constraint if Case = Tabular then forall( n in NURSES, d in DAYS)(
+                    score[ n, d] ==    (if d==1 then 
+                                                nShiftScore__DATA_1D[(pow(4,nPatternLength)*(nNurseBioType[n]-1) + (   
+                                                  1+nShift[n,d]*pow(nPatternLength,3))  ) ]
+                                        elseif d==2 then
+                                                nShiftScore__DATA_1D[(pow(4,nPatternLength)*(nNurseBioType[n]-1) + (   
+                                                  (1) + 
+                                                   nShift[n,d-1]*pow(nPatternLength,2)+ 
+                                                   nShift[n,d]*pow(nPatternLength,3)) 
+                                                   ) ]
+                                        elseif d==3 then
+                                                nShiftScore__DATA_1D[(pow(4,nPatternLength)*(nNurseBioType[n]-1) + (   
+                                                  (1) + 
+                                                   nShift[n,d-2]*nPatternLength + 
+                                                   nShift[n,d-1]*pow(nPatternLength,2)+ 
+                                                   nShift[n,d]*pow(nPatternLength,3)) 
+                                                   ) ]   
+                                        else           
+                                            if d > 4 /\ nShift[n,d-4]==3 then
+                                                  nShiftScoreAfterNight__DATA_1D[(pow(4,nPatternLength)*(nNurseBioType[n]-1) + (   
+                                                  (nShift[n,d-3]+1) + 
+                                                   nShift[n,d-2]*nPatternLength + 
+                                                   nShift[n,d-1]*pow(nPatternLength,2)+ 
+                                                   nShift[n,d]*pow(nPatternLength,3)) 
+                                                   ) ]
+                                            else                                             
+                                                  nShiftScore__DATA_1D[(pow(4,nPatternLength)*(nNurseBioType[n]-1) + (   
+                                                  (nShift[n,d-3]+1) + 
+                                                   nShift[n,d-2]*nPatternLength + 
+                                                   nShift[n,d-1]*pow(nPatternLength,2)+ 
+                                                   nShift[n,d]*pow(nPatternLength,3)) 
+                                                   ) ]
+                                            endif
+                                         endif)
+                    ) 
+         else true endif;
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PREDICATES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % test is_night__DATA( int: n, int: d ) = (3==nShift__DATA[ n, d ]);
@@ -113,13 +202,13 @@ constraint forall( d in DAYS )(
 int: maxTotalWorkPerWeek = 38*10;
 
 % Nathan: This constraint seems wrong and create more complexity to GeCode and Chuffed in finding solution.
-% constraint forall( n in NURSES )(      
-%                    sum( d in DAYS )( nShiftWorkDuration[nShift[n,d]] ) <= maxTotalWorkPerWeek * (max(DAYS) div 7 ) );
+constraint forall( n in NURSES )(      
+                   sum( d in DAYS )( nShiftWorkDuration[nShift[n,d]] ) <= maxTotalWorkPerWeek * (max(DAYS) div 7 ) );
                    
 %% Minimum total work
 0..1: applyMinWorkTime;
 int: minTotalWorkPerWeek = if applyMinWorkTime==1 then 35*10 else 0 endif;
-constraint forall( n in NURSES )(      
+constraint forall( n in NURSES )(
                    sum( d in DAYS )( nShiftWorkDuration[nShift[n,d]] ) >= minTotalWorkPerWeek * (max(DAYS) div 7 ) );
                                              
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -177,39 +266,111 @@ constraint if extShiftWork==1 then forall( n in NURSES, kd in 0..(max(DAYS) div 
     ( is_working_some_of( n, dSat1, dSat1+1 ) /\ is_working_some_of( n, dSat1+7, dSat1+8 ) /\
         is_working_some_of( n, dSat1+14, dSat1+15 ) )
 )
-           else true endif;
+           else true endif; 
+
 
 
 %% After every N (say 10) number of days there should be a two consecutive OFF days, similar to weekend OFF constraint
 int: nConsecWorkOFF = 10;
 constraint if extShiftWork==1 then forall( n in NURSES, d in DAYS where d <= max(DAYS)-nConsecWorkOFF -2)(
-                    if sum( d1 in d..d+nConsecWorkOFF-1 )( is_idle( n, d1 ) /\ is_idle( n, d1+1 ) ) ==  0 then
-                      ( is_idle( n, d+nConsecWorkOFF+1 ) /\ is_idle(n,d+nConsecWorkOFF+2) )
-                    else true endif )
+                   if sum( d1 in d..d+nConsecWorkOFF-1 )( is_idle( n, d1 ) /\ is_idle( n, d1+1 ) ) ==  0 then ( is_idle( n, d+nConsecWorkOFF+1 ) /\ is_idle(n,d+nConsecWorkOFF+2) ) else true endif )
            else true endif;
 
-var int: obj;
+% var 0..infinity: bb_obj = if fObjMinimiseSum==1 then sum(n in NURSES)( max(d in DAYS)(score[n,d]) ) else max( score ) endif;
+
+% constraint obj * 100 >= bb_obj * 90;
+
+% constraint if Case = BlackBox then 
+%         blackbox(
+%           [
+%             length(nNurseBioType),
+%             nNurses,
+%             nDays
+%           ] 
+%           ++ nNurseBioType
+%           ++ array1d(nShift),
+%           [],
+%           [obj],
+%           []) ::blackbox_exec("/usr/local/Caskroom/miniconda/base/envs/blackbox/bin/python bb_fatigue_score.py")
+%     else true endif;
+
+array[NURSES] of var int: bb_score;
+
+constraint if Case = BlackBox then
+    forall(n in NURSES)(
+        blackbox(
+          [ nNurseBioType[n], n ]
+          ++ nShift[n, ..],
+          [],
+          [bb_score[n]],
+          []) ::blackbox_exec("/usr/local/Caskroom/miniconda/base/envs/blackbox/bin/python bb_fatigue_score.py --single --cache")
+    )
+    else true endif;
+
+var minFatigue..maxFatigue: obj;
 int: fObjMinimiseSum;
 % %constraint if true \/ fObjMinimiseSum==1 then forall(n in NURSES, d in DAYS)(score[n,d] <=maxObj) else true endif;%
-constraint obj = if fObjMinimiseSum==1 then sum(n in NURSES)( max(d in DAYS)(score[n,d]) ) else max( score ) endif; % Minimise max score in the entire roster
+constraint
+  if Case = Tabular then
+    obj = if fObjMinimiseSum==1 then sum(n in NURSES)( max(d in DAYS)(score[n,d]) ) else max( score ) endif
+  elseif Case = BlackBox then
+    obj = if fObjMinimiseSum==1 then sum(n in NURSES)( bb_score[n] ) else max( bb_score ) endif
+  else true endif; % statify problems
+
+% array[int] of int: SORTED_DAYS::output = [ kd | d1 in 1..7, d in 0..(max(DAYS)-1) div 7, kd = (7*d)+d1 ];
+% array[int] of int: SORTED_DAYS::output = [ d | d in DAYS, n in NURSES ];
+
+% nShift = 
+% [| 3, 3, 0, 0, 1, 2, 2, 2, 2, 0, 0, 2, 3, 0, 1, 0, 0, 1, 3, 0, 2, 2, 2, 3, 0, 0, 1, 2, 2, 0, 1, 1, 1, 2, 0, 3, 0, 0, 0, 1, 3, 0
+%  | 2, 3, 3, 3, 0, 0, 2, 3, 0, 1, 1, 0, 0, 2, 2, 2, 2, 0, 0, 2, 0, 1, 1, 1, 2, 0, 3, 0, 0, 2, 2, 0, 3, 3, 0, 1, 1, 0, 0, 3, 3, 0
+%  | 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 3, 0, 0, 0, 1, 1, 2, 2, 3, 0, 0, 1, 2, 0, 1, 2, 0, 0, 2, 2, 2, 3, 0, 1, 0, 1
+%  | 1, 1, 1, 2, 0, 1, 0, 0, 0, 3, 3, 0, 2, 0, 2, 2, 2, 0, 0, 0, 2, 0, 0, 1, 0, 1, 1, 2, 2, 2, 3, 0, 0, 1, 1, 3, 0, 1, 2, 0, 1, 0
+%  | 1, 1, 0, 0, 1, 0, 3, 0, 2, 2, 3, 0, 0, 1, 2, 3, 3, 3, 0, 1, 0, 0, 2, 0, 1, 0, 2, 3, 3, 3, 0, 0, 1, 1, 2, 0, 2, 2, 2, 0, 0, 1
+%  | 3, 0, 1, 0, 2, 3, 3, 0, 2, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 3, 3, 0, 1, 1, 0, 0, 3, 0, 0, 1, 3, 0, 0, 2, 2, 2, 0, 1, 2, 2, 0
+%  | 0, 2, 2, 3, 0, 0, 1, 0, 0, 1, 2, 3, 3, 3, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 2, 2, 2, 0, 0, 1, 3, 0, 2, 2, 0, 3, 0, 0, 1, 2, 0, 1
+%  | 1, 0, 3, 3, 3, 0, 1, 2, 0, 1, 0, 0, 0, 2, 0, 1, 1, 2, 0, 0, 1, 1, 0, 1, 1, 0, 2, 2, 0, 0, 0, 2, 0, 1, 3, 0, 1, 1, 1, 1, 0, 1
+%  | 1, 2, 0, 3, 0, 2, 2, 2, 3, 0, 0, 0, 3, 3, 0, 1, 0, 0, 1, 1, 3, 0, 0, 2, 2, 2, 2, 3, 3, 0, 0, 3, 0, 1, 1, 0, 2, 2, 2, 0, 0, 1
+%  | 1, 0, 2, 2, 3, 0, 2, 0, 0, 2, 2, 2, 0, 2, 2, 2, 3, 0, 0, 1, 1, 2, 2, 2, 2, 0, 1, 0, 0, 1, 2, 0, 0, 3, 3, 0, 1, 2, 0, 0, 1, 0
+%  | 1, 2, 0, 0, 1, 1, 0, 0, 3, 0, 0, 1, 2, 3, 3, 3, 0, 0, 1, 1, 2, 2, 2, 0, 0, 1, 2, 2, 0, 0, 1, 2, 3, 0, 2, 2, 3, 0, 0, 1, 1, 0
+%  | 0, 1, 2, 0, 3, 3, 0, 1, 2, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 2, 0, 0, 1, 2, 3, 0, 1, 0, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0, 0, 2, 3
+%  | 3, 0, 1, 1, 0, 1, 2, 3, 3, 0, 0, 3, 0, 1, 3, 0, 2, 0, 0, 2, 0, 1, 1, 2, 0, 0, 1, 1, 1, 2, 2, 2, 0, 3, 0, 0, 1, 3, 0, 2, 3, 0
+%  | 3, 3, 0, 2, 0, 0, 2, 2, 2, 0, 0, 2, 3, 3, 0, 1, 2, 2, 3, 0, 1, 0, 0, 0, 1, 0, 1, 2, 0, 2, 2, 2, 0, 0, 1, 1, 1, 2, 2, 0, 0, 3
+%  | 0, 0, 2, 0, 1, 1, 1, 0, 0, 2, 2, 2, 2, 2, 0, 0, 1, 1, 1, 3, 0, 0, 1, 1, 1, 1, 2, 0, 0, 0, 2, 0, 0, 1, 1, 1, 1, 1, 3, 0, 0, 2
+%  | 2, 3, 3, 0, 2, 2, 0, 0, 1, 1, 1, 0, 1, 3, 0, 0, 3, 3, 3, 0, 1, 3, 0, 0, 0, 2, 3, 0, 0, 3, 0, 2, 2, 0, 2, 0, 0, 1, 2, 2, 2, 3
+%  | 0, 1, 2, 0, 2, 2, 0, 0, 0, 2, 2, 2, 3, 3, 3, 0, 0, 1, 2, 2, 0, 1, 0, 0, 1, 3, 3, 0, 2, 2, 0, 0, 1, 1, 0, 1, 0, 1, 2, 3, 0, 2
+%  | 0, 0, 1, 2, 2, 0, 3, 3, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 2, 3, 0, 1, 3, 0, 0, 1, 3, 3, 0, 1, 1, 1, 2, 0, 2, 0, 0, 0, 1, 1, 1, 0
+%  | 2, 2, 0, 1, 0, 0, 1, 1, 0, 2, 2, 2, 3, 0, 0, 2, 2, 2, 0, 1, 0, 0, 3, 0, 2, 2, 3, 0, 1, 0, 0, 1, 1, 2, 3, 0, 0, 3, 3, 0, 0, 2
+%  | 2, 2, 3, 0, 0, 3, 0, 0, 1, 0, 1, 3, 3, 0, 0, 3, 0, 2, 2, 2, 0, 0, 1, 3, 0, 1, 1, 1, 2, 0, 0, 0, 2, 0, 2, 0, 2, 2, 2, 2, 2, 0
+%  | 2, 3, 0, 1, 0, 2, 0, 0, 1, 3, 3, 0, 2, 2, 2, 2, 0, 0, 2, 0, 1, 2, 3, 0, 0, 3, 0, 1, 1, 2, 0, 2, 0, 0, 1, 1, 3, 0, 0, 0, 2, 2
+%  | 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 2, 2, 3, 3, 0, 0, 2, 2, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 2, 2, 0
+%  | 2, 2, 0, 0, 1, 2, 0, 1, 1, 3, 0, 1, 1, 0, 0, 0, 1, 3, 3, 0, 2, 0, 0, 3, 3, 3, 0, 2, 3, 0, 0, 1, 1, 2, 0, 2, 0, 0, 1, 3, 0, 2
+%  | 1, 0, 2, 2, 2, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 2, 2, 0, 0, 2, 2, 3, 0, 0, 1, 3, 0, 1, 1, 3, 0, 2, 0, 1, 0, 0, 0, 3, 0, 0, 1
+%  | 3, 0, 0, 2, 2, 3, 0, 2, 2, 2, 2, 0, 2, 0, 0, 0, 1, 0, 1, 0, 2, 2, 2, 2, 0, 0, 0, 1, 0, 1, 2, 3, 3, 0, 1, 2, 3, 0, 0, 0, 1, 2
+%  | 0, 2, 0, 1, 1, 1, 2, 2, 0, 0, 1, 1, 2, 2, 2, 2, 0, 2, 2, 3, 0, 0, 0, 0, 2, 2, 2, 0, 1, 3, 0, 1, 1, 2, 0, 0, 0, 0, 1, 1, 1, 0
+%  |];
+
+include "gecode.mzn";
+
+array[NURSES, DAYS] of int: init_sols;
+
+ann: initial = relax_and_reconstruct(array1d(nShift), 80, array1d(init_sols));
 
 solve
-::seq_search( [
-       int_search(
-            [ nShift[n,d] | n in NURSES, d in DAYS ],
-            input_order, indomain_min, complete
-        ),
-%        int_search(
-%             [ nShift[n,d] | n in NURSES, d in DAYS diff DayID ],
-%             input_order, indomain_min, complete
-%         ),
-%        int_search(
-%             [ nShift[n,d] | n in NURSES diff ({NurseID} union { n1 | n1 in NURSES }), d in DayID where nShift_WS_DATA_2D[n,d] == 0],
-%             input_order, indomain_min, complete
-%         ),
-%        int_search(
-%             [ nShift[n,d] | n in NURSES diff ({NurseID} union { n1 | n1 in NURSES }), d in DAYS diff NurseID where nShift_WS_DATA_2D[n,d] == 0],
-%             input_order, indomain_min, complete
-%         ),
-])
+  ::initial
+  ::seq_search( [
+
+%          int_search(
+%               [ nShift[n,d] | n in NURSES, d in DAYS ],
+%               input_order, indomain_min, complete
+%           ),
+           int_search(
+                [ nShift[n,d] | d in DAYS, n in NURSES ],
+                random, indomain_min
+            ),
+%           int_search(
+%               [ nShift[n,d] | d in SORTED_DAYS, n in NURSES ],
+%               input_order, indomain_min, complete
+%           ),
+  ])
+%   satisfy;
   minimize obj;
