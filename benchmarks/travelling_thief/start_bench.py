@@ -16,7 +16,7 @@ schedule(
     timeout=timedelta(minutes=int(os.getenv("TIMEOUT_MIN", default=15))),
 
     configurations=[
-        Configuration(name="Gecode", solver=minizinc.Solver.lookup("gecode", driver=driver)),
-        # Configuration(name="Alantis", solver=minizinc.Solver.lookup("se.uu.it.atlantis", driver=driver, refresh=True)),
+        Configuration(name="Gecode_BB", solver=minizinc.Solver.lookup("gecode", driver=driver), extra_data={"Case": "BlackBox"}),
+        Configuration(name="Gecode_Decomp", solver=minizinc.Solver.lookup("gecode", driver=driver), extra_data={"Case": "Tabular"}),
     ],
 )
