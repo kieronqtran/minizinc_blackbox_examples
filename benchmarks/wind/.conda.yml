@@ -1,0 +1,17 @@
+name: minizinc-windfarm-benchmark
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy
+  - openjdk=8
+  - pip
+  - pip:
+    - pandas
+    - matplotlib
+    - minizinc
+    - python-dotenv
+    - jmespath
+    - mzn-bench
+    - mzn-bench[plotting]
