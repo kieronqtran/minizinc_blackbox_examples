@@ -2,24 +2,35 @@
 from datetime import timedelta
 from pathlib import Path
 from dotenv import load_dotenv
-import minizinc
+from minizinc import Driver, Solver
 import os
 import shutil
+from itertools import product
 
 from mzn_bench import Configuration, schedule
 
 load_dotenv()
 
 #%%
-driver = minizinc.Driver(Path(os.getenv("MINIZINC_PATH", default=shutil.which("minizinc"))))
-
+driver = Driver(Path(os.getenv("MINIZINC_PATH", default=shutil.which("minizinc"))))
+current_dir = Path(__file__).parent
 #%%
 schedule(
     instances=Path("./instances.csv"),
     timeout=timedelta(minutes=int(os.getenv("TIMEOUT_MIN", default=15))),
     configurations=[
-        Configuration(name="Gecode_BB", solver=minizinc.Solver.lookup("gecode", driver=driver)),
-        Configuration(name="Atlantis_BB", solver=minizinc.Solver.lookup("atlantis", driver=driver)),
+        Configuration(name=f"Gecode_BB_LNS_{i}_{j}",
+                      solver=Solver.lookup("gecode", driver=driver),
+                      other_flags={
+                        "--param-file": str(current_dir / "models" / "configs" / "gecode_bb.mpc"),
+                        "--restart-scale": j,
+                        "--restart": "constant",
+                      },
+                      extra_data={
+                        "n": i,
+                      }
+        )
+        for i, j in product(range(1, 11), [1] + list(range(25, 251, 25)))
+        # Configuration(name="Atlantis_BB", solver=Solver.lookup("atlantis", driver=driver)),
     ],
 )
-# %%
