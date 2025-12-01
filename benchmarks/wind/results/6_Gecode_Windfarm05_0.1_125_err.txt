@@ -1,0 +1,5 @@
+ERROR: Traceback (most recent call last):
+  File "/var/spool/slurmd/job99609/slurm_script", line 279, in main
+    problem = selected_instance[0]
+              ~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range

@@ -31,6 +31,5 @@ schedule(
                       }
         )
         for i, j in product(range(1, 11), [1] + list(range(25, 251, 25)))
-        # Configuration(name="Atlantis_BB", solver=Solver.lookup("atlantis", driver=driver)),
     ],
 )

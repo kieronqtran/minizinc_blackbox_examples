@@ -1,0 +1,47 @@
+- configuration: Gecode_Windfarm05_0.2_250
+  data_file: models/data/windfarm01.dzn
+  model: models/model/windfarm05.mzn
+  problem: model
+  solution:
+    coords: [0, 0, 0, 2850, 850, 0, 850, 1350, 990, 2885, 1850, 1350, 1850, 2850,
+      2850, 0, 2850, 1350, 2850, 2850]
+    min_dist: 308.0
+    obj: 72609133
+    objective: -72609133
+    rate@13.9-34|adaptiveUniform@21.12-44: 0.200000000000001
+    xvariant_div5: [0, 0, -30, -30, -2, -30, -30, -30, -30, -30]
+    yvariant_div5: [0, -30, 0, -30, -23, -30, -30, 0, -30, -30]
+  status: SATISFIED
+  time: 1.683
+- configuration: Gecode_Windfarm05_0.2_250
+  data_file: models/data/windfarm01.dzn
+  model: models/model/windfarm05.mzn
+  problem: model
+  solution:
+    coords: [65, 70, 90, 2970, 995, 70, 975, 1450, 985, 2960, 2035, 1645, 1920, 2870,
+      2880, 30, 2940, 1410, 2890, 2885]
+    min_dist: 308.0
+    obj: 72622351
+    objective: -72622351
+    rate@13.9-34|adaptiveUniform@21.12-44: 0.99
+    xvariant_div5: [13, 18, -1, -5, -3, 7, -16, -24, -12, -22]
+    yvariant_div5: [14, -6, 14, -10, -8, 29, -26, 6, -18, -23]
+  status: SATISFIED
+  time: 15.777
+- configuration: Gecode_Windfarm05_0.2_250
+  data_file: models/data/windfarm01.dzn
+  model: models/model/windfarm05.mzn
+  problem: model
+  solution:
+    coords: [80, 100, 60, 2975, 1150, 80, 915, 1400, 1005, 2960, 2005, 1640, 2045,
+      2905, 2965, 15, 2880, 1480, 2880, 2875]
+    min_dist: 308.0
+    obj: 72684345
+    objective: -72684345
+    rate@13.9-34|adaptiveUniform@21.12-44: 0.99
+    xvariant_div5: [16, 12, 30, -17, 1, 1, 9, -7, -24, -24]
+    yvariant_div5: [20, -5, 16, -20, -8, 28, -19, 3, -4, -25]
+  status: SATISFIED
+  time: 450.19
+- {configuration: Gecode_Windfarm05_0.2_250, data_file: models/data/windfarm01.dzn,
+  model: models/model/windfarm05.mzn, problem: model, status: SATISFIED}

@@ -1,3 +1,9 @@
+
+% Heuristic overview:
+%  - Builds on windfarm_base02 and introduces a random restart strategy for LNS.
+%  - On every restart we sample a set of turbines and keep the remainder fixed,
+%    ensuring diversification without discarding high quality structure.
+
 include "experimental/on_restart.mzn";
 include "windfarm_base02.mzn";
 include "all_different.mzn";
