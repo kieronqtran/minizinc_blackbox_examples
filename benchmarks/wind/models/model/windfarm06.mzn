@@ -1,4 +1,3 @@
-
 include "experimental/on_restart.mzn";
 include "windfarm_base02.mzn";
 
@@ -8,13 +7,17 @@ float: initTemp = 10000;
 float: coolingRate = 0.0005;
 
 predicate simulated_annealing(float: initTemp, float: coolingRate) = 
-  let { var 0.0..initTemp: temp::output; } in
+  let {
+    var 0.0..initTemp: temp::output;
+    var -MAX_INT / initTemp..0.0: y; % TODO: What is the proper lowerbound instead -MAX_INT / initTemp.
+    constraint blackbox([], [0.0, 1.0], [], [y]) % the domain of ln(~U(0,1)) is from (-infinity, 0]
+      ::blackbox_dll("../blackbox_exec/cpp_ln_uniform_on_restart_dll/build/libbb_ln_uniform_on_restart.so");
+  } in
   if status()=START then temp = initTemp
   else
     temp = last_val(temp)*(1-coolingRate) /\ % cool down
     % _objective < sol(_objective) - ceil(ln(uniform(0.0,1.0)) * temp)
-    % _objective < sol(_objective) - ceil(ln_uniform_on_restart(0.0,1.0) * temp)
-    _objective < sol(_objective) - ceil(uniform_on_restart(-(100), 0) * temp)
+    _objective < sol(_objective) - ceil(y * temp)
   endif;
 
 constraint simulated_annealing(initTemp, coolingRate);
