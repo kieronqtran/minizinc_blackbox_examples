@@ -1,0 +1,14 @@
+{
+  "all-satisfaction": true,
+  "compiler-statistics": true,
+  "intermediate-solutions": true,
+  "output-objective": true,
+  "output-time": true,
+  "solver": "org.gecode.gecode@6.3.0",
+  "solver-statistics": true,
+  "time-limit": 900000,
+  "--restart-scale": 125,
+  "--restart": "constant",
+  "--parallel": 6,
+  "--cmdline-json-data": "{\"initTemp\": 30000, \"coolingRate\": 0, \"percentage\": 75}"
+}

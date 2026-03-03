@@ -1,28 +1,26 @@
 include "experimental/on_restart.mzn";
 include "windfarm_base02.mzn";
 
-int: MAX_INT = 2147483646;  % safe sentinel under 32-bit signed limit
 
-float: initTemp = 10000;
-float: coolingRate = 0.0005;
+opt int: percentage;
 
-predicate simulated_annealing(float: initTemp, float: coolingRate) = 
-  let {
-    var 0.0..initTemp: temp::output;
-    var -MAX_INT / initTemp..0.0: y; % TODO: What is the proper lowerbound instead -MAX_INT / initTemp.
-    constraint blackbox([], [0.0, 1.0], [], [y]) % the domain of ln(~U(0,1)) is from (-infinity, 0]
-      ::blackbox_dll("../blackbox_exec/cpp_ln_uniform_on_restart_dll/build/libbb_ln_uniform_on_restart.so");
-  } in
-  if status()=START then temp = initTemp
-  else
-    temp = last_val(temp)*(1-coolingRate) /\ % cool down
-    % _objective < sol(_objective) - ceil(ln(uniform(0.0,1.0)) * temp)
-    _objective < sol(_objective) - ceil(y * temp)
+ann: search_int = if occurs(percentage) /\ percentage > -1 then 
+    seq_search([
+             int_search([ if j == 1 then xvariant_div5[i] else yvariant_div5[i] endif | i in TURB, j in 1..2 ], input_order, indomain_random),
+             relax_and_reconstruct(xvariant_div5 ++ yvariant_div5, deopt(percentage))
+             ])
+  else 
+    int_search([ if j == 1 then xvariant_div5[i] else yvariant_div5[i] endif | i in TURB, j in 1..2 ], input_order, indomain_random)
   endif;
 
-constraint simulated_annealing(initTemp, coolingRate);
+predicate hill_climbing() =
+  if status()=START then true
+  else obj > sol(obj) endif;
+
+constraint hill_climbing();
 
 solve
-%   ::on_restart("random_pick_turbine") % not working due to there is a bug in MiniZinc compiler.
-  ::int_search([ if j == 1 then xvariant_div5[i] else yvariant_div5[i] endif | i in TURB, j in 1..2 ], input_order, indomain_random)
-maximize obj;
+%   ::on_restart("hill_climbing") % not working due to there is a bug in MiniZinc compiler.
+   ::search_int
+satisfy;
+% maximize obj;
